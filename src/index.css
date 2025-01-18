@@ -1,3 +1,23 @@
+/**git-and-github-workflow  - version 1.00 - index.css
+ * - Features: 
+ * 
+ *     --> Adding 'tailwind' base   
+ * 
+ * Note: the macro 'tw' in order to work and use has to be installed
+ * there is around 4 or 5 libraries and this is oen of the most active
+ * and recent
+ * 
+ *          https://www.npmjs.com/package/twin.macro
+ * 
+ * i have to create a root access custom color palette in order 
+ * to use them in the custom titles
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
