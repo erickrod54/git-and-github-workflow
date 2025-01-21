@@ -1,20 +1,28 @@
 import React from "react";
 import styled from "styled-components";
-import { HeaderComponent } from "../components/index.components";
+import { CommandsPallete, FooterComponent, HeaderComponent } from "../components/index.components";
 
 
-/**git-and-github-workflow  - version 1.00 - HomePage
+/**git-and-github-workflow  - version 1.03 - HomePage
  * - Features: 
  * 
- *     --> Adding 'HeaderComponent'    
+ *     --> Adding site strcuture    
  * 
  * Note: this is the index components
  */
 
+const HomePageContainer = styled.div`
+
+`
+
 const HomePage = () => {
 
     return(
-        <HeaderComponent />
+        <HomePageContainer>
+            <HeaderComponent />
+            <CommandsPallete />
+            <FooterComponent />
+        </HomePageContainer>
     )
 }
 
