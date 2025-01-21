@@ -1,18 +1,18 @@
 import React from "react";
 
-/**git-and-github-workflow  - version 1.01 - FooterComponent
+/**git-and-github-workflow  - version 1.03 - FooterComponent
  * - Features: 
  * 
- *     --> Building 'CoomandsPallete'    
+ *     --> Renaming 'CoomandsPallete'  to 'CommandsPallete'   
  * 
  * Note: this is the index components
  */
 
-const CoomandsPallete = () => {
+const CommandsPallete = () => {
 
     return(
         <h2>the CoomandsPallete Component</h2>
     )
 }
 
-export default CoomandsPallete;
+export default CommandsPallete;
