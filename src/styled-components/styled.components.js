@@ -1,12 +1,19 @@
 import styled from "styled-components"
 
-/**git-and-github-workflow  - version 1.06 - HomePage
+/**git-and-github-workflow  - version 1.07 - HomePage
  * - Features: 
  * 
- *     --> writting 'HomePageContainer' styles    
+ *     --> writting 'MainContent' styles    
  * 
  * Note: this is the index components
  */
+
+export const MainContent = styled.div`
+    flex-grow: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+`
 
 export const HomePageContainer = styled.div`
     display: flex;
