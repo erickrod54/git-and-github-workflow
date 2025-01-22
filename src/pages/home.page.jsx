@@ -3,10 +3,10 @@ import styled from "styled-components";
 import { CommandsPallete, FooterComponent, HeaderComponent } from "../components/index.components";
 
 
-/**git-and-github-workflow  - version 1.04 - HomePage
+/**git-and-github-workflow  - version 1.05 - HomePage
  * - Features: 
  * 
- *     --> writting 'HomePageContainer' styles    
+ *     --> writting 'MainContent' styles    
  * 
  * Note: this is the index components
  */
@@ -19,13 +19,23 @@ const HomePageContainer = styled.div`
     color: #1f2937; /* Dark gray text */
 `
 
+const MainContent = styled.div`
+    flex-grow: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+`
+
+
 const HomePage = () => {
 
     return(
         <HomePageContainer>
-            <HeaderComponent />
-            <CommandsPallete />
-            <FooterComponent />
+            <MainContent>
+                <HeaderComponent />
+                <CommandsPallete />
+                <FooterComponent />
+            </MainContent>
         </HomePageContainer>
     )
 }
