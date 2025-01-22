@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-/**git-and-github-workflow  - version 1.07 - HomePage
+/**git-and-github-workflow  - version 1.07 - styledcomponent
  * - Features: 
  * 
  *     --> writting 'MainContent' styles    
