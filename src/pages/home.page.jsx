@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import { CommandsPallete, FooterComponent, HeaderComponent } from "../components/index.components";
-import { HomePageContainer, MainContent } from "../styled-components/styled.components";
+import { GlobalStyles, HomePageContainer, MainContent } from "../styled-components/styled.components";
 
 
-/**git-and-github-workflow  - version 1.07 - HomePage
+/**git-and-github-workflow  - version 1.09 - HomePage
  * - Features: 
  * 
- *     --> Migrating 'MainContent' styles    
+ *     --> implementing 'GlobalStyles'     
  * 
  * Note: this is the index components
  */
@@ -17,6 +17,8 @@ import { HomePageContainer, MainContent } from "../styled-components/styled.comp
 const HomePage = () => {
 
     return(
+        <>
+        <GlobalStyles />
         <HomePageContainer>
             <MainContent>
                 <HeaderComponent />
@@ -24,6 +26,7 @@ const HomePage = () => {
                 <FooterComponent />
             </MainContent>
         </HomePageContainer>
+        </>
     )
 }
 
