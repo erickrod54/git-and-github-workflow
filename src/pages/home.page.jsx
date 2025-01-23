@@ -1,24 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 import { CommandsPallete, FooterComponent, HeaderComponent } from "../components/index.components";
-import { HomePageContainer } from "../styled-components/styled.components";
+import { HomePageContainer, MainContent } from "../styled-components/styled.components";
 
 
-/**git-and-github-workflow  - version 1.06 - HomePage
+/**git-and-github-workflow  - version 1.07 - HomePage
  * - Features: 
  * 
- *     --> Migrating 'HomePageContainer' styles    
+ *     --> Migrating 'MainContent' styles    
  * 
  * Note: this is the index components
  */
 
-
-const MainContent = styled.div`
-    flex-grow: 1;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 24px;
-`
 
 
 const HomePage = () => {
