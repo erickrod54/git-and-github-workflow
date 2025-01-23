@@ -1,12 +1,25 @@
-import styled from "styled-components"
+import styled, { createGlobalStyle } from "styled-components"
 
-/**git-and-github-workflow  - version 1.07 - styledcomponent
+/**git-and-github-workflow  - version 1.09 - styledcomponent
  * - Features: 
  * 
- *     --> writting 'MainContent' styles    
+ *     --> writting 'GlobalStyles' styles    
  * 
  * Note: this is the index components
  */
+
+export const GlobalStyles = createGlobalStyle`
+    * {
+        font-family: 'Inter', sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background-color: #f3f4f6; /* Light gray background */
+        color: #1f2937; /* Dark gray text */
+    } 
+`
 
 export const MainContent = styled.div`
     flex-grow: 1;
