@@ -1,11 +1,11 @@
-import { HomePageContainer, MainContent } from "./styled.components";
+import { HomePageContainer, MainContent, MainTitle } from "./styled.components";
 
-/**git-and-github-workflow  - version 1.06 - styled.components > index
+/**git-and-github-workflow  - version 1.10 - styled.components > index
  * - Features: 
  * 
- *     --> importing and Exporting 'HomePageContainer' styles    
+ *     --> importing and Exporting 'MainTitle' styles    
  * 
  * Note: this is the index components
  */
 
-export { HomePageContainer, MainContent }
+export { HomePageContainer, MainContent, MainTitle }
