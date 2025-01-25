@@ -1,10 +1,11 @@
 import React, { useContext, useReducer } from "react";
+import { TitlesData } from "./data";
 
 
-/**git-and-github-workflow  - version 1.13 - HeaderComponent
+/**git-and-github-workflow  - version 1.14 - HeaderComponent
  * - Features: 
  * 
- *     --> Building context    
+ *     --> Migrating 'TitlesData' throught context    
  * 
  * Note: this is the index components
  */
