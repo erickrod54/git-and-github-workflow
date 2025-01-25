@@ -2,10 +2,10 @@ import React, { useContext, useReducer } from "react";
 import { TitlesData } from "./data";
 
 
-/**git-and-github-workflow  - version 1.14 - HeaderComponent
+/**git-and-github-workflow  - version 1.15 - HeaderComponent
  * - Features: 
  * 
- *     --> Migrating 'TitlesData' throught context    
+ *     --> Testing multiple data     
  * 
  * Note: this is the index components
  */
@@ -26,7 +26,8 @@ return(
      * i spread/copy the state - initalState - and
      * 'handleShow' will keep the action dispatch */
     <AppContext.Provider value={{
-        singleData
+        singleData,
+        TitlesData,
     }}>
         {children}
     </AppContext.Provider>
