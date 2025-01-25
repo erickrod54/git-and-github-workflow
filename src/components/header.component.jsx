@@ -3,10 +3,10 @@ import styled from "styled-components";
 import { MainTitle } from "../styled-components/styled.components";
 import { useAppContext } from "../context";
 
-/**git-and-github-workflow  - version 1.14 - HeaderComponent
+/**git-and-github-workflow  - version 1.15 - HeaderComponent
  * - Features: 
  * 
- *     --> testing context    
+ *     --> Destructuring 'mainTitle'    
  * 
  * Note: this is the index components
  */
@@ -15,13 +15,15 @@ import { useAppContext } from "../context";
 
 const HeaderComponent = ({title}) => {
 
-    const  testdata  = useAppContext()
+    const  { testdata, TitlesData }  = useAppContext()
+
+    const mainTitle = TitlesData[0].title
      
-    console.log('this is the context test ===>', testdata)
+    console.log('this is the context TitlesData ===>', TitlesData)
 
     return(
         <MainTitle>
-            {title}
+            {mainTitle}
         </MainTitle> 
     )
 }
