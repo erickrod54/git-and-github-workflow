@@ -1,11 +1,11 @@
 import React from "react";
 import HomePage from "./pages/home.page";
-import { AppProvider } from "./context";
+import { GitGuideProvider } from "./context";
 
-/**git-and-github-workflow  - version 1.15 - App
+/**git-and-github-workflow  - version 1.16 - App
  * - Features: 
  * 
- *     --> Adding AppProvider    
+ *     --> Adding 'GitGuideProvider'    
  * 
  * Note: this is the index components
  */
@@ -14,9 +14,9 @@ import { AppProvider } from "./context";
 function App() {
   return (
     <>
-    <AppProvider>
+    <GitGuideProvider>
       <HomePage />
-    </AppProvider>
+    </GitGuideProvider>
     </>
   );
 }
