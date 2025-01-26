@@ -1,12 +1,19 @@
 import styled, { createGlobalStyle } from "styled-components"
 
-/**git-and-github-workflow  - version 1.10 - styledcomponent
+/**git-and-github-workflow  - version 1.16 - styledcomponent
  * - Features: 
  * 
- *     --> writting 'MainTitle' styles    
+ *     --> writting 'breakpoints' for responsiveness    
  * 
  * Note: this is the index components
  */
+
+// Responsive breakpoints
+const breakpoints = {
+    phone: "480px",
+    tablet: "768px",
+    desktop: "1024px",
+  };
 
 export const MainTitle = styled.h2`
     background-color: white;
