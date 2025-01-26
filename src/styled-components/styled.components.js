@@ -1,9 +1,10 @@
 import styled, { createGlobalStyle } from "styled-components"
 
-/**git-and-github-workflow  - version 1.16 - styledcomponent
+/**git-and-github-workflow  - version 1.17 - styledcomponent
  * - Features: 
  * 
- *     --> writting 'breakpoints' for responsiveness    
+ *     --> writting 'MianTitle' Tablet size screen and 
+ *         adding comment to desktop font size     
  * 
  * Note: this is the index components
  */
@@ -18,7 +19,7 @@ const breakpoints = {
 export const MainTitle = styled.h2`
     background-color: white;
     color: #1f2937; /* Dark gray text */
-    font-size: 2rem;
+    font-size: 2rem; /* Default for Desktop */
     font-weight: 700;
     text-align: center;
     padding: 1rem 2rem;
@@ -27,6 +28,12 @@ export const MainTitle = styled.h2`
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle border shadow */
     border-left: 5px solid #2563eb; /* Blue left border */
     max-width: 80%;
+
+    /* Tablet (Medium screens) */
+    @media (max-width: ${breakpoints.tablet}) {
+        font-size: 1.75rem;
+        padding: 0.8rem 1.5rem;
+    }
 `;
 
 export const GlobalStyles = createGlobalStyle`
