@@ -1,10 +1,9 @@
 import styled, { createGlobalStyle } from "styled-components"
 
-/**git-and-github-workflow  - version 1.17 - styledcomponent
+/**git-and-github-workflow  - version 1.18 - styledcomponent
  * - Features: 
  * 
- *     --> writting 'MianTitle' Tablet size screen and 
- *         adding comment to desktop font size     
+ *     --> writting 'MianTitle' small screens - phones    
  * 
  * Note: this is the index components
  */
@@ -33,6 +32,13 @@ export const MainTitle = styled.h2`
     @media (max-width: ${breakpoints.tablet}) {
         font-size: 1.75rem;
         padding: 0.8rem 1.5rem;
+    }
+
+        /* Phone (Small screens) */
+        @media (max-width: ${breakpoints.phone}) {
+        font-size: 1.5rem;
+        padding: 0.7rem 1.2rem;
+        max-width: 90%;
     }
 `;
 
