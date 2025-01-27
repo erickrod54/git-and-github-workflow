@@ -1,9 +1,9 @@
 import styled, { createGlobalStyle } from "styled-components"
 
-/**git-and-github-workflow  - version 2.01 - styledcomponent
+/**git-and-github-workflow  - version 2.02 - styledcomponent
  * - Features: 
  * 
- *     --> writting 'MainContent' box shadow styles     
+ *     --> writting 'MainContent' box shadow for medium sizes styles     
  * 
  * Note: this is the index components
  */
@@ -67,6 +67,7 @@ export const MainContent = styled.div`
     /* Tablet */
     @media (max-width: ${breakpoints.tablet}) {
         padding: 20px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12); /* Slightly smaller shadow */
     }
 
     /* Phone */
