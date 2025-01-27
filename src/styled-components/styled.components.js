@@ -1,9 +1,9 @@
 import styled, { createGlobalStyle } from "styled-components"
 
-/**git-and-github-workflow  - version 1.20 - styledcomponent
+/**git-and-github-workflow  - version 2.00 - styledcomponent
  * - Features: 
  * 
- *     --> writting 'MainContent' phone ( small screens ) 
+ *     --> writting 'HomePageContainer' phone ( small screens ) 
  *         responsiveness     
  * 
  * Note: this is the index components
@@ -79,4 +79,10 @@ export const HomePageContainer = styled.div`
     min-height: 100vh;
     background-color: #f3f4f6; /* Light gray background */
     color: #1f2937; /* Dark gray text */
+    padding: 0 20px; /* Default padding */
+
+    /* Phone */
+    @media (max-width: ${breakpoints.phone}) {
+        padding: 0 10px;
+    }
 `
