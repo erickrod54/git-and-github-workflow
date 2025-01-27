@@ -1,9 +1,10 @@
 import styled, { createGlobalStyle } from "styled-components"
 
-/**git-and-github-workflow  - version 1.18 - styledcomponent
+/**git-and-github-workflow  - version 1.19 - styledcomponent
  * - Features: 
  * 
- *     --> writting 'MianTitle' small screens - phones    
+ *     --> writting 'MainContent' tablet ( medium screens ) 
+ *         responsiveness     
  * 
  * Note: this is the index components
  */
@@ -60,6 +61,11 @@ export const MainContent = styled.div`
     max-width: 1200px;
     margin: 0 auto;
     padding: 24px;
+
+    /* Tablet */
+    @media (max-width: ${breakpoints.tablet}) {
+        padding: 20px;
+    }
 `
 
 export const HomePageContainer = styled.div`
