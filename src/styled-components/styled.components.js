@@ -1,10 +1,9 @@
 import styled, { createGlobalStyle } from "styled-components"
 
-/**git-and-github-workflow  - version 2.00 - styledcomponent
+/**git-and-github-workflow  - version 2.01 - styledcomponent
  * - Features: 
  * 
- *     --> writting 'HomePageContainer' phone ( small screens ) 
- *         responsiveness     
+ *     --> writting 'MainContent' box shadow styles     
  * 
  * Note: this is the index components
  */
@@ -61,6 +60,9 @@ export const MainContent = styled.div`
     max-width: 1200px;
     margin: 0 auto;
     padding: 24px;
+    background-color: white; /* Ensure it stands out */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Soft shadow */
 
     /* Tablet */
     @media (max-width: ${breakpoints.tablet}) {
@@ -68,7 +70,7 @@ export const MainContent = styled.div`
     }
 
     /* Phone */
-     @media (max-width: ${breakpoints.phone}) {
+    @media (max-width: ${breakpoints.phone}) {
         padding: 16px;
     }
 `
