@@ -1,9 +1,10 @@
 import React from "react";
+import SingleCommand from "./single.command.component";
 
-/**git-and-github-workflow  - version 1.03 - FooterComponent
+/**git-and-github-workflow  - version 2.04 - CommandsPallete
  * - Features: 
  * 
- *     --> Renaming 'CoomandsPallete'  to 'CommandsPallete'   
+ *     --> Adding 'SingleCommand'  
  * 
  * Note: this is the index components
  */
@@ -11,7 +12,10 @@ import React from "react";
 const CommandsPallete = () => {
 
     return(
-        <h2>the CoomandsPallete Component</h2>
+        <>
+            <h2>the CoomandsPallete Component</h2>
+            <SingleCommand />
+        </>
     )
 }
 
