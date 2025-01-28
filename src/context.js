@@ -1,11 +1,11 @@
 import React, { useContext, useReducer } from "react";
-import { TitlesData } from "./data";
+import { gitCommands, TitlesData } from "./data";
 
 
-/**git-and-github-workflow  - version 1.16 - HeaderComponent
+/**git-and-github-workflow  - version 2.04 - HeaderComponent
  * - Features: 
  * 
- *     --> Refactoring context     
+ *     --> Migrating  'gitCommands' throught the context     
  * 
  * Note: this is the index components
  */
@@ -20,6 +20,7 @@ return(
     /**here i pass everything throught the provider */
     <GitGuideContext.Provider value={{
         TitlesData,
+        gitCommands,
     }}>
         {children}
     </GitGuideContext.Provider>
