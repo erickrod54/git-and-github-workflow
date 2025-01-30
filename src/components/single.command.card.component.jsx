@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-/**git-and-github-workflow  - version 2.08- SingleCardCommand
+/**git-and-github-workflow  - version 2.09- SingleCardCommand
  * - Features: 
  * 
- *     --> writting  'Title' styles
+ *     --> writting  'BoxContent' styles
  * 
  * Note: this is the index components
  */
@@ -38,10 +38,9 @@ export const CardContainer = styled.div`
 `;
 
 export const BoxContainer = styled.div`
-  width: fit-content;
   height: 15.875em;
   padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.074);
+  background-color: #fab5704c  ;
   border: 1px solid rgba(255, 255, 255, 0.222);
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
@@ -63,17 +62,41 @@ export const Title = styled.div`
   letter-spacing: 0.1em;
 `;
 
+export const BoxContent = styled.div`
+  strong {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.9em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+  }
+
+  span {
+    font-size: 0.7rem;
+    font-weight: 300;
+  }
+
+  span:nth-child(3) {
+    font-weight: 500;
+    margin-right: 0.2rem;
+  }
+`;
+
 const SingleCardComponent = () => {
 
     return(
     <CardContainer>
         <BoxContainer>
             <Title>GLASS EFFECT</Title>
-            <div>
+            <BoxContent>
             <strong>SingleCardComponent</strong>
             <p>0000 000 000 0000</p>
             <span>VALID</span> <span>01/28</span>
-            </div>
+            </BoxContent>
         </BoxContainer>
     </CardContainer>
     )
