@@ -7,10 +7,10 @@ import { clipboard } from '../assets/index.assets';
 import styled from 'styled-components';
 
 
-/**git-and-github-workflow  - version 1.04 - BashCode
+/**git-and-github-workflow  - version 2.10 - BashCode
  * - Features: 
  * 
- *     --> Building 'BashCode'  
+ *     --> Refactoring 'BashCode'  
  * 
  * Note: this is the index components
  */
@@ -20,42 +20,49 @@ const Okadia = styled.div`
 `
 const BashCode = ({ code }) => {
     const codeRef = useRef(null);
-  
+
     useEffect(() => {
-      if (typeof window !== 'undefined') {
-        Prism.highlightAll();
-      }
+        if (typeof window !== 'undefined') {
+            Prism.highlightAll();
+        }
     }, []);
-  
+
     const copyToClipboard = () => {
-      if (codeRef && codeRef.current) {
-        navigator.clipboard.writeText(codeRef.current.textContent)
-          .then(() => {
-            // Handle successful copy
-            console.log('Code copied to clipboard!');
-            // You can add further feedback/notification here if needed
-          })
-          .catch(err => {
-            // Handle errors
-            console.error('Failed to copy:', err);
-          });
-      }
+        if (codeRef && codeRef.current) {
+            navigator.clipboard.writeText(codeRef.current.textContent)
+                .then(() => {
+                    console.log('Code copied to clipboard!');
+                })
+                .catch(err => {
+                    console.error('Failed to copy:', err);
+                });
+        }
     };
-  
+
     return (
-      <Okadia>
-        <div className='sm:w-66'>
-          <pre>
-          <button onClick={copyToClipboard} >
-            <img src={clipboard} alt='clipboard' className='mt-0 p-4 hover:bg-green-300 duration-75 rounded-md'/>
-          </button>
-            <code ref={codeRef} className="lang-js">
-              {code}
-            </code>
-          </pre>
-        </div>
-      </Okadia>
+        <Okadia>
+            <div className='sm:w-66 relative'>
+                {/* Clipboard Button */}
+                <button 
+                    onClick={copyToClipboard} 
+                    className='absolute top-2 right-2 p-2 rounded-md bg-gray-800 hover:bg-green-300 duration-200'
+                >
+                    <img 
+                        src={clipboard} 
+                        alt='clipboard' 
+                        className='w-6 h-6' 
+                    />
+                </button>
+
+                {/* Code Block */}
+                <pre className="p-4 rounded-lg bg-gray-900">
+                    <code ref={codeRef} className="lang-js">
+                        {code}
+                    </code>
+                </pre>
+            </div>
+        </Okadia>
     );
-  };
-  
-  export default BashCode;
+};
+
+export default BashCode;
