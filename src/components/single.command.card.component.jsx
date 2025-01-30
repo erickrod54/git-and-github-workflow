@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import SingleCommand from "./single.command.component";
+import { useGitGuideContext } from "../context";
 
-/**git-and-github-workflow  - version 2.09- SingleCardCommand
+/**git-and-github-workflow  - version 2.10- SingleCardCommand
  * - Features: 
  * 
- *     --> writting  'BoxContent' styles
+ *     --> destructuring  'gitCommands' from the context
  * 
  * Note: this is the index components
  */
@@ -88,11 +90,18 @@ export const BoxContent = styled.div`
 
 const SingleCardComponent = () => {
 
+    const { gitCommands } = useGitGuideContext();
+
+    console.log('this is the gitCommands data in SingleCardComponent ==>', gitCommands)
+
+    const gitstatus = gitCommands[0].command;
+
     return(
     <CardContainer>
         <BoxContainer>
             <Title>GLASS EFFECT</Title>
             <BoxContent>
+            <SingleCommand />    
             <strong>SingleCardComponent</strong>
             <p>0000 000 000 0000</p>
             <span>VALID</span> <span>01/28</span>
