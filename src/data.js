@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 2.04 - data js
+/**git-and-github-workflow  - version 2.10 - data js
  * - Features: 
  *    
- *     --> Adding 'gitCommands' data
+ *     --> Reactroing 'gitCommands' data
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -26,13 +26,13 @@ export const gitCommands = [
     {
       id:1,
       category:'git daily use',
-      title:'git add',
+      command:'git status',
       description:'Track new files'
     },
     {
       id:2,
       category:'sub titles',
-      title:'here is the next sub title',
+      command:'here is the next sub title',
       description:''
     },
 ]
