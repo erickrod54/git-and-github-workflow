@@ -3,10 +3,10 @@ import styled from "styled-components";
 import SingleCommand from "./single.command.component";
 import { useGitGuideContext } from "../context";
 
-/**git-and-github-workflow  - version 2.10- SingleCardCommand
+/**git-and-github-workflow  - version 2.11- SingleCardCommand
  * - Features: 
  * 
- *     --> destructuring  'gitCommands' from the context
+ *     --> Setting 'SingleCardComponent' content
  * 
  * Note: this is the index components
  */
@@ -40,7 +40,7 @@ export const CardContainer = styled.div`
 `;
 
 export const BoxContainer = styled.div`
-  height: 15.875em;
+
   padding: 1rem;
   background-color: #fab5704c  ;
   border: 1px solid rgba(255, 255, 255, 0.222);
@@ -62,6 +62,7 @@ export const Title = styled.div`
   font-size: 2rem;
   font-weight: 500;
   letter-spacing: 0.1em;
+  margin-bottom: 1rem;
 `;
 
 export const BoxContent = styled.div`
@@ -72,7 +73,7 @@ export const BoxContent = styled.div`
 
   p {
     margin: 0;
-    font-size: 0.9em;
+    font-size: 1.5em;
     font-weight: 300;
     letter-spacing: 0.1em;
   }
@@ -94,17 +95,18 @@ const SingleCardComponent = () => {
 
     console.log('this is the gitCommands data in SingleCardComponent ==>', gitCommands)
 
-    const gitstatus = gitCommands[0].command;
+    const category = gitCommands[0].category;
+    const description = gitCommands[0].description;
 
     return(
     <CardContainer>
         <BoxContainer>
-            <Title>GLASS EFFECT</Title>
+            <Title>{category}</Title>
             <BoxContent>
             <SingleCommand />    
-            <strong>SingleCardComponent</strong>
-            <p>0000 000 000 0000</p>
-            <span>VALID</span> <span>01/28</span>
+            <strong>Description</strong>
+            <p>{description}</p>
+            <span>frecuency</span> <span> - most use</span>
             </BoxContent>
         </BoxContainer>
     </CardContainer>
