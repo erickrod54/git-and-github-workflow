@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 2.10 - data js
+/**git-and-github-workflow  - version 2.11 - data js
  * - Features: 
  *    
- *     --> Reactroing 'gitCommands' data
+ *     --> Adding 'git add' 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -27,12 +27,12 @@ export const gitCommands = [
       id:1,
       category:'git daily use',
       command:'git status',
-      description:'Track new files'
+      description:'Track new files, show the current state of your working directory and staging area. It helps you see which changes have been staged, which haven’t, and which files aren’t being tracked by Git.'
     },
     {
       id:2,
-      category:'sub titles',
-      command:'here is the next sub title',
-      description:''
+      category:'git daily use',
+      command:'git add',
+      description:'If a file is modified but unstaged, use git add <file> to stage it'
     },
 ]
