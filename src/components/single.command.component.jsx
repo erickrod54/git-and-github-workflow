@@ -2,22 +2,18 @@ import React from "react"
 import BashCode from "./bash.code.component"
 import { useGitGuideContext } from "../context"
 
-/**git-and-github-workflow  - version 2.10 - SingleCommand
+/**git-and-github-workflow  - version 2.12 - SingleCommand
  * - Features: 
  * 
- *     --> Adding 'git status' first command test
+ *     --> getting drilled commands prop
  * 
  * Note: this is the index components
  */
 
-const SingleCommand = () => {
-    
-    const { gitCommands } = useGitGuideContext();
-
-    const gitstatus = gitCommands[0].command;
+const SingleCommand = ({ command }) => {
     
     return(
-        <BashCode code={gitstatus}/>
+        <BashCode code={command}/>
     )
 }
 
