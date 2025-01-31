@@ -3,11 +3,11 @@ import styled from "styled-components";
 import SingleCommand from "./single.command.component";
 import { useGitGuideContext } from "../context";
 
-/**git-and-github-workflow  - version 2.11- SingleCardCommand
+/**git-and-github-workflow  - version 2.12- SingleCardCommand
  * - Features: 
  * 
- *     --> Setting 'SingleCardComponent' content
- * 
+ *     --> Mapping props for  'SingleCardComponent' 
+ *   
  * Note: this is the index components
  */
 
@@ -95,20 +95,23 @@ const SingleCardComponent = () => {
 
     console.log('this is the gitCommands data in SingleCardComponent ==>', gitCommands)
 
-    const category = gitCommands[0].category;
-    const description = gitCommands[0].description;
-
     return(
     <CardContainer>
-        <BoxContainer>
-            <Title>{category}</Title>
-            <BoxContent>
-            <SingleCommand />    
-            <strong>Description</strong>
-            <p>{description}</p>
-            <span>frecuency</span> <span> - most use</span>
-            </BoxContent>
-        </BoxContainer>
+            {gitCommands.map((commands) => {
+                const { category, description, command, id } = commands;
+                
+                return(
+                <BoxContainer key={id}>
+                    <Title>{category}</Title>
+                    <BoxContent>
+                    <SingleCommand command={command}/>    
+                    <strong>Description</strong>
+                    <p>{description}</p>
+                    <span>frecuency</span> <span> - most use</span>
+                    </BoxContent>
+                </BoxContainer>        
+                )
+            })}
     </CardContainer>
     )
 }
