@@ -3,10 +3,10 @@ import styled from "styled-components";
 import SingleCommand from "./single.command.component";
 import { useGitGuideContext } from "../context";
 
-/**git-and-github-workflow  - version 2.14- SingleCardCommand
+/**git-and-github-workflow  - version 2.15- SingleCardCommand
  * - Features: 
  * 
- *     --> Adding  second white space to 'CardContainer' 
+ *     --> Adding white space to 'BoxContainer' 
  *   
  * Note: this is the index components
  */
@@ -54,6 +54,7 @@ export const BoxContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 2rem;
   
 
   &:hover {
