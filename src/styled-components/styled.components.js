@@ -1,12 +1,12 @@
 import styled, { createGlobalStyle } from "styled-components"
 
-/**git-and-github-workflow  - version 2.03 - styledcomponent
+/**git-and-github-workflow  - version 2.16 - styledcomponent
  * - Features: 
  * 
- *     --> writting 'MainContent' box shadow for small sizes styles     
+ *     --> Adding 'SubTitle'      
  * 
  * Note: this is the index components
- */
+*/
 
 // Responsive breakpoints
 const breakpoints = {
@@ -27,20 +27,28 @@ export const MainTitle = styled.h2`
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle border shadow */
     border-left: 5px solid #2563eb; /* Blue left border */
     max-width: 80%;
-
+    
     /* Tablet (Medium screens) */
     @media (max-width: ${breakpoints.tablet}) {
         font-size: 1.75rem;
         padding: 0.8rem 1.5rem;
     }
-
-        /* Phone (Small screens) */
-        @media (max-width: ${breakpoints.phone}) {
+    
+    /* Phone (Small screens) */
+    @media (max-width: ${breakpoints.phone}) {
         font-size: 1.5rem;
         padding: 0.7rem 1.2rem;
         max-width: 90%;
     }
-`;
+    `;
+
+export const SubTitle = styled(MainTitle)`
+    background-color: whitesmoke;
+    text-align: left;
+    width: fit-content;
+    border-left: 5px solid #0aee3b; /* Blue left border */
+    margin-left: 7.2rem;
+`
 
 export const GlobalStyles = createGlobalStyle`
     * {
