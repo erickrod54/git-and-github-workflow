@@ -3,10 +3,10 @@ import styled from "styled-components";
 import SingleCommand from "./single.command.component";
 import { useGitGuideContext } from "../context";
 
-/**git-and-github-workflow  - version 2.12- SingleCardCommand
+/**git-and-github-workflow  - version 2.13- SingleCardCommand
  * - Features: 
  * 
- *     --> Mapping props for  'SingleCardComponent' 
+ *     --> Adding  white space to 'CardContainer' 
  *   
  * Note: this is the index components
  */
@@ -15,6 +15,8 @@ export const CardContainer = styled.div`
   color: black;
   position: relative;
   font-family: sans-serif;
+  margin-top: 2rem;
+  
 
   &::before,
   &::after {
@@ -51,6 +53,7 @@ export const BoxContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
 
   &:hover {
     box-shadow: 0px 0px 20px 1px #ffbb763f;
