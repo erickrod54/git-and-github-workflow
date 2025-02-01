@@ -1,9 +1,9 @@
 import styled, { createGlobalStyle } from "styled-components"
 
-/**git-and-github-workflow  - version 2.16 - styledcomponent
+/**git-and-github-workflow  - version 2.17 - styledcomponent
  * - Features: 
  * 
- *     --> Adding 'SubTitle'      
+ *     --> Adding white space to 'SubTitle'      
  * 
  * Note: this is the index components
 */
@@ -48,6 +48,7 @@ export const SubTitle = styled(MainTitle)`
     width: fit-content;
     border-left: 5px solid #0aee3b; /* Blue left border */
     margin-left: 7.2rem;
+    margin-top: 4rem;
 `
 
 export const GlobalStyles = createGlobalStyle`
