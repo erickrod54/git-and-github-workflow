@@ -2,11 +2,12 @@ import React from "react";
 import SingleCardComponent from "./single.command.card.component";
 import styled from "styled-components";
 import { SubTitle } from "../styled-components/styled.components";
+import { useGitGuideContext } from "../context";
 
-/**git-and-github-workflow  - version 2.17 - CommandsPallete
+/**git-and-github-workflow  - version 2.18 - CommandsPallete
  * - Features: 
  * 
- *     --> writting and importing 'SubTitle'  
+ *     --> destructuring 'TitlesData'  
  * 
  * Note: this is the index components
  */
@@ -17,9 +18,13 @@ const CommandsPalleteContainer = styled.div`
 
 const CommandsPallete = () => {
 
+    const { TitlesData } = useGitGuideContext();
+
+    const subtitle1 = TitlesData[1].title;
+
     return(
         <CommandsPalleteContainer>
-            <SubTitle>Coomands Pallete</SubTitle>
+            <SubTitle>{subtitle1}</SubTitle>
             <SingleCardComponent />
         </CommandsPalleteContainer>
     )
