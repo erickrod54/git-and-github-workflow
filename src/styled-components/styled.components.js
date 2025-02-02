@@ -1,9 +1,9 @@
 import styled, { createGlobalStyle } from "styled-components"
 
-/**git-and-github-workflow  - version 2.17 - styledcomponent
+/**git-and-github-workflow  - version 2.19 - styledcomponent
  * - Features: 
  * 
- *     --> Adding white space to 'SubTitle'      
+ *     --> writting 'CommandsPalleteContainer'      
  * 
  * Note: this is the index components
 */
@@ -14,6 +14,10 @@ const breakpoints = {
     tablet: "768px",
     desktop: "1024px",
   };
+
+export const CommandsPalleteContainer = styled.div`
+
+`
 
 export const MainTitle = styled.h2`
     background-color: white;
