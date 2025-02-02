@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 2.11 - data js
+/**git-and-github-workflow  - version 2.17 - data js
  * - Features: 
  *    
- *     --> Adding 'git add' 
+ *     --> Adding 'Commands Pallete' 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -17,7 +17,7 @@ export const TitlesData = [
     {
       id:2,
       category:'sub titles',
-      title:'here is the next sub title',
+      title:'Commands Pallete',
       description:''
     },
 ]
