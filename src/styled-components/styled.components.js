@@ -1,9 +1,9 @@
 import styled, { createGlobalStyle } from "styled-components"
 
-/**git-and-github-workflow  - version 2.20 - styledcomponent
+/**git-and-github-workflow  - version 3.00 - styledcomponent
  * - Features: 
  * 
- *     --> writting 'SingleCommandContainer'      
+ *     --> writting 'CardContainer'      
  * 
  * Note: this is the index components
 */
@@ -14,6 +14,37 @@ const breakpoints = {
     tablet: "768px",
     desktop: "1024px",
   };
+
+export const CardContainer = styled.div`
+    color: black;
+    position: relative;
+    font-family: sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+
+    &::before,
+    &::after {
+    content: "";
+    background-color: #fab5704c;
+    position: absolute;
+    }
+
+    &::before {
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    top: 30%;
+    right: 7%;
+    }
+
+    &::after {
+    height: 3rem;
+    top: 8%;
+    right: 5%;
+    border: 1px solid;
+    }
+`;  
 
 export const SingleCommandContainer = styled.div`
   margin: 1rem;
