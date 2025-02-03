@@ -1,9 +1,9 @@
 import styled, { createGlobalStyle } from "styled-components"
 
-/**git-and-github-workflow  - version 2.19 - styledcomponent
+/**git-and-github-workflow  - version 2.20 - styledcomponent
  * - Features: 
  * 
- *     --> writting 'CommandsPalleteContainer'      
+ *     --> writting 'SingleCommandContainer'      
  * 
  * Note: this is the index components
 */
@@ -14,6 +14,10 @@ const breakpoints = {
     tablet: "768px",
     desktop: "1024px",
   };
+
+export const SingleCommandContainer = styled.div`
+  margin: 1rem;
+`
 
 export const CommandsPalleteContainer = styled.div`
 
