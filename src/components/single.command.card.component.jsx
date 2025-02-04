@@ -2,45 +2,16 @@ import React from "react";
 import styled from "styled-components";
 import SingleCommand from "./single.command.component";
 import { useGitGuideContext } from "../context";
+import { CardContainer } from "../styled-components/styled.components";
 
-/**git-and-github-workflow  - version 2.15- SingleCardCommand
+/**git-and-github-workflow  - version 3.00 - SingleCardCommand
  * - Features: 
  * 
- *     --> Adding white space to 'BoxContainer' 
+ *     --> Migrating 'CardContainer' styles 
  *   
  * Note: this is the index components
  */
 
-export const CardContainer = styled.div`
-  color: black;
-  position: relative;
-  font-family: sans-serif;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  
-
-  &::before,
-  &::after {
-    content: "";
-    background-color: #fab5704c;
-    position: absolute;
-  }
-
-  &::before {
-    border-radius: 50%;
-    width: 6rem;
-    height: 6rem;
-    top: 30%;
-    right: 7%;
-  }
-
-  &::after {
-    height: 3rem;
-    top: 8%;
-    right: 5%;
-    border: 1px solid;
-  }
-`;
 
 export const BoxContainer = styled.div`
 
