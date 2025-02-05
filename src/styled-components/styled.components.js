@@ -1,9 +1,9 @@
 import styled, { createGlobalStyle } from "styled-components"
 
-/**git-and-github-workflow  - version 3.01 - styledcomponent
+/**git-and-github-workflow  - version 3.04 - styledcomponent
  * - Features: 
  * 
- *     --> writting 'BoxContainer'      
+ *     --> writting 'StrongContainer'      
  * 
  * Note: this is the index components
 */
@@ -14,6 +14,10 @@ const breakpoints = {
     tablet: "768px",
     desktop: "1024px",
   };
+
+export const StrongContainer = styled.strong`
+
+`
 
 export const BoxContainer = styled.div`
 
