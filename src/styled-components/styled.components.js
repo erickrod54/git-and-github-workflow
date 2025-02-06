@@ -1,9 +1,9 @@
 import styled, { createGlobalStyle } from "styled-components"
 
-/**git-and-github-workflow  - version 3.06 - styledcomponent
+/**git-and-github-workflow  - version 3.08 - styledcomponent
  * - Features: 
  * 
- *     --> writting 'DescriptionBox'      
+ *     --> writting 'FrecuencyTitle'      
  * 
  * Note: this is the index components
 */
@@ -14,6 +14,10 @@ const breakpoints = {
     tablet: "768px",
     desktop: "1024px",
   };
+
+export const FrecuencyTitle = styled.span`
+
+`  
 
 export const DescriptionBox = styled.p`
 
