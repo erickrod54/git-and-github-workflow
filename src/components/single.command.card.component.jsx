@@ -2,19 +2,16 @@ import React from "react";
 import styled from "styled-components";
 import SingleCommand from "./single.command.component";
 import { useGitGuideContext } from "../context";
-import { BoxContainer, BoxContent, CardContainer, StrongContainer, Title } from "../styled-components/styled.components";
+import { BoxContainer, BoxContent, CardContainer, DescriptionBox, StrongContainer, Title } from "../styled-components/styled.components";
 
-/**git-and-github-workflow  - version 3.05 - SingleCardCommand
+/**git-and-github-workflow  - version 3.06 - SingleCardCommand
  * - Features: 
  * 
- *     --> Migrating 'DescriptionBox' styles 
+ *     --> Migrating 'DescriptionBox' 
  *   
  * Note: this is the index components
  */
 
-const DescriptionBox = styled.p`
-
-`
 
 const SingleCardComponent = () => {
 
