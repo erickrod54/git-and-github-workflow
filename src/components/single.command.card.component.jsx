@@ -4,14 +4,17 @@ import SingleCommand from "./single.command.component";
 import { useGitGuideContext } from "../context";
 import { BoxContainer, BoxContent, CardContainer, DescriptionBox, StrongContainer, Title } from "../styled-components/styled.components";
 
-/**git-and-github-workflow  - version 3.06 - SingleCardCommand
+/**git-and-github-workflow  - version 3.07 - SingleCardCommand
  * - Features: 
  * 
- *     --> Migrating 'DescriptionBox' 
+ *     --> writting 'FrecuencyTitle' 
  *   
  * Note: this is the index components
  */
 
+const FrecuencyTitle = styled.span`
+
+`
 
 const SingleCardComponent = () => {
 
@@ -31,7 +34,7 @@ const SingleCardComponent = () => {
                     <SingleCommand command={command}/>    
                     <StrongContainer>Description</StrongContainer>
                         <DescriptionBox>{description}</DescriptionBox>
-                    <span>frecuency</span> <span> - most use</span>
+                        <FrecuencyTitle>frecuency</FrecuencyTitle> <span> - most use</span>
                     </BoxContent>
                 </BoxContainer>        
                 )
