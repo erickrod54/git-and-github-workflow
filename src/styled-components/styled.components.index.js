@@ -2,13 +2,14 @@ import { BoxContainer,
          CardContainer,
          CommandsPalleteContainer,
          DescriptionBox,
+         FrecuencyTitle,
          HomePageContainer,
          MainContent, MainTitle, SingleCommandContainer, StrongContainer, SubTitle } from "./styled.components";
 
-/**git-and-github-workflow  - version 3.06 - styled.components > index
+/**git-and-github-workflow  - version 3.08 - styled.components > index
  * - Features: 
  * 
- *     --> importing and Exporting 'DescriptionBox' styles    
+ *     --> importing and Exporting 'FrecuencyTitle' styles    
  * 
  * Note: this is the index components
  */
@@ -18,4 +19,5 @@ export { HomePageContainer,
          MainTitle, SubTitle,
          CommandsPalleteContainer,
          SingleCommandContainer,
+         FrecuencyTitle,
          CardContainer, BoxContainer, StrongContainer, DescriptionBox }
