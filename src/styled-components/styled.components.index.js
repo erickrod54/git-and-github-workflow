@@ -1,11 +1,21 @@
-import { BoxContainer, CardContainer, CommandsPalleteContainer, HomePageContainer, MainContent, MainTitle, SingleCommandContainer, StrongContainer, SubTitle } from "./styled.components";
+import { BoxContainer,
+         CardContainer,
+         CommandsPalleteContainer,
+         DescriptionBox,
+         HomePageContainer,
+         MainContent, MainTitle, SingleCommandContainer, StrongContainer, SubTitle } from "./styled.components";
 
-/**git-and-github-workflow  - version 3.04 - styled.components > index
+/**git-and-github-workflow  - version 3.06 - styled.components > index
  * - Features: 
  * 
- *     --> importing and Exporting 'StrongContainer' styles    
+ *     --> importing and Exporting 'DescriptionBox' styles    
  * 
  * Note: this is the index components
  */
 
-export { HomePageContainer, MainContent, MainTitle, SubTitle, CommandsPalleteContainer, SingleCommandContainer, CardContainer, BoxContainer, StrongContainer }
+export { HomePageContainer,
+         MainContent,
+         MainTitle, SubTitle,
+         CommandsPalleteContainer,
+         SingleCommandContainer,
+         CardContainer, BoxContainer, StrongContainer, DescriptionBox }
