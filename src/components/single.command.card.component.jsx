@@ -2,19 +2,16 @@ import React from "react";
 import styled from "styled-components";
 import SingleCommand from "./single.command.component";
 import { useGitGuideContext } from "../context";
-import { BoxContainer, BoxContent, CardContainer, DescriptionBox, FrecuencyTitle, StrongContainer, Title } from "../styled-components/styled.components";
+import { BoxContainer, BoxContent, CardContainer, DescriptionBox, FrecuencyTitle, FrecuencyValue, StrongContainer, Title } from "../styled-components/styled.components";
 
-/**git-and-github-workflow  - version 3.09 - SingleCardCommand
+/**git-and-github-workflow  - version 3.10 - SingleCardCommand
  * - Features: 
  * 
- *     --> wirtting 'FrecuencyValue' 
+ *     --> Migrating 'FrecuencyValue' 
  *   
  * Note: this is the index components
  */
 
-const FrecuencyValue = styled.span`
-
-`
 
 const SingleCardComponent = () => {
 
