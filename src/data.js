@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 2.17 - data js
+/**git-and-github-workflow  - version 3.10 - data js
  * - Features: 
  *    
- *     --> Adding 'Commands Pallete' 
+ *     --> Adding 'git add .' 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -34,5 +34,11 @@ export const gitCommands = [
       category:'git daily use',
       command:'git add',
       description:'If a file is modified but unstaged, use git add <file> to stage it'
+    },
+    {
+      id:3,
+      category:'git daily use',
+      command:'git add .',
+      description:'Represents the current directory, meaning all new, modified, or deleted files will be staged'
     },
 ]
