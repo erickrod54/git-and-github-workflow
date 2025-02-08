@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 3.12 - data js
+/**git-and-github-workflow  - version 3.13 - data js
  * - Features: 
  *    
- *     --> Adding 'git commit --amend' 
+ *     --> Adding 'git reset HEAD~1' 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -59,5 +59,10 @@ export const gitCommands = [
       command:'    git log --oneline',
       description:'This command will list the commits with their hash values. Identify the commit you want to edit and note its hash'
     },
+    {
+      id:7,
+      category:'git daily use',
+      command:'git reset HEAD~1',
+      description:'This command will list the commits with their hash values. Identify the commit you want to edit and note its hash'
+    },
 ]
-
