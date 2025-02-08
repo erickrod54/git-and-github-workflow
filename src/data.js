@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 3.10 - data js
+/**git-and-github-workflow  - version 3.11 - data js
  * - Features: 
  *    
- *     --> Adding 'git add .' 
+ *     --> Adding 'git commit -m' 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -40,5 +40,11 @@ export const gitCommands = [
       category:'git daily use',
       command:'git add .',
       description:'Represents the current directory, meaning all new, modified, or deleted files will be staged'
+    },
+    {
+      id:4,
+      category:'git daily use',
+      command:'git commit -m "commit message"',
+      description:'Replace "commit message" with a brief description of the changes that you made'
     },
 ]
