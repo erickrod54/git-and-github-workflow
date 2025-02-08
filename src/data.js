@@ -53,5 +53,11 @@ export const gitCommands = [
       command:'git commit --amend',
       description:'This will open your default text editor with the previous commit message. You can make changes to the message if needed.'
     },
+    {
+      id:6,
+      category:'git daily use',
+      command:'    git log --oneline',
+      description:'This command will list the commits with their hash values. Identify the commit you want to edit and note its hash'
+    },
 ]
 
