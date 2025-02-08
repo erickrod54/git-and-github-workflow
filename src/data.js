@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 3.11 - data js
+/**git-and-github-workflow  - version 3.12 - data js
  * - Features: 
  *    
- *     --> Adding 'git commit -m' 
+ *     --> Adding 'git commit --amend' 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -47,4 +47,11 @@ export const gitCommands = [
       command:'git commit -m "commit message"',
       description:'Replace "commit message" with a brief description of the changes that you made'
     },
+    {
+      id:5,
+      category:'git daily use',
+      command:'git commit --amend',
+      description:'This will open your default text editor with the previous commit message. You can make changes to the message if needed.'
+    },
 ]
+
