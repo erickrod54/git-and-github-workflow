@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-/**git-and-github-workflow  - version 3.14 - FooterComponent
+/**git-and-github-workflow  - version 3.15 - FooterComponent
  * - Features: 
  * 
- *     --> writting 'FooterContainer'    
+ *     --> writting 'FooterContainer' responsiveness for Tablet   
  * 
  * Note: this is the index components
  */
@@ -18,6 +18,11 @@ const FooterContainer = styled.footer`
     color: white;
     padding: 2rem;
     text-align: center;
+
+    /* Tablet */
+    @media (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    }
 `;
 
 
