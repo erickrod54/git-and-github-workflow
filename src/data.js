@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 3.13 - data js
+/**git-and-github-workflow  - version 3.14 - data js
  * - Features: 
  *    
- *     --> Adding 'git reset HEAD~1' 
+ *     --> Adding 'git reset' 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -64,5 +64,11 @@ export const gitCommands = [
       category:'git daily use',
       command:'git reset HEAD~1',
       description:'This command will list the commits with their hash values. Identify the commit you want to edit and note its hash'
+    },
+    {
+      id:8,
+      category:'git daily use',
+      command:'git reset',
+      description:'his command will unstage the changes for the specified file, effectively removing it from the staging area while keeping your changes in the working directory.'
     },
 ]
