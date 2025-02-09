@@ -5393,6 +5393,11 @@ human-signals@^2.1.0:
   resolved "https://registry.npmjs.org/human-signals/-/human-signals-2.1.0.tgz"
   integrity sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==
 
+iconoir@^7.10.1:
+  version "7.10.1"
+  resolved "https://registry.npmjs.org/iconoir/-/iconoir-7.10.1.tgz"
+  integrity sha512-cSH+dBz1YOtvsYBRsrvDnVHX1w8OtiylGSIgbzjc8l8+AiXlD+oDVLAA+yfoYV6eL8LypWlrbnHkYcBif+7BvQ==
+
 iconv-lite@^0.6.3:
   version "0.6.3"
   resolved "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.6.3.tgz"
