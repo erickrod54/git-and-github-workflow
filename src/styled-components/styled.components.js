@@ -1,9 +1,9 @@
 import styled, { createGlobalStyle } from "styled-components"
 
-/**git-and-github-workflow  - version 3.17 - styledcomponent
+/**git-and-github-workflow  - version 3.18 - styledcomponent
  * - Features: 
  * 
- *     --> refactoring 'MainTitle'      
+ *     --> Refactoring 'SubTitle'      
  * 
  * Note: this is the index components
 */
@@ -154,6 +154,7 @@ export const SubTitle = styled(MainTitle)`
     background-color: whitesmoke;
     text-align: left;
     width: fit-content;
+    border: none;
     border-left: 5px solid #0aee3b; /* Blue left border */
     margin-left: 7.2rem;
     margin-top: 4rem;
