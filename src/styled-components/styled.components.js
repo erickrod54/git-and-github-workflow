@@ -1,9 +1,9 @@
 import styled, { createGlobalStyle } from "styled-components"
 
-/**git-and-github-workflow  - version 3.10 - styledcomponent
+/**git-and-github-workflow  - version 3.17 - styledcomponent
  * - Features: 
  * 
- *     --> writting 'FrecuencyValue'      
+ *     --> refactoring 'MainTitle'      
  * 
  * Note: this is the index components
 */
@@ -134,6 +134,7 @@ export const MainTitle = styled.h2`
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle border shadow */
     border-left: 5px solid #2563eb; /* Blue left border */
     max-width: 80%;
+    border: 2px solid #43628f;
     
     /* Tablet (Medium screens) */
     @media (max-width: ${breakpoints.tablet}) {
