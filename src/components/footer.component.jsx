@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-/**git-and-github-workflow  - version 3.18 - FooterComponent
+/**git-and-github-workflow  - version 3.19 - FooterComponent
  * - Features: 
  * 
- *     --> writting 'FooterColumn'   
+ *     --> Refactoring 'FooterColumn'   
  * 
  * Note: this is the index components
  */
@@ -36,12 +36,12 @@ const FooterColumn = styled.div`
     h3 {
         margin-bottom: 1rem;
         font-size: 1.25rem;
-        color: #fbbf24; /* Yellow */
+        color: #f4a261; /* Yellow */
     }
 
     p {
         font-size: 1rem;
-        color: #d1d5db; /* Light gray */
+        color: #4f6688; /* Light gray */
     }
 
     ul {
@@ -69,7 +69,10 @@ const FooterComponent = () => {
 
     return(
         <FooterContainer>
-            <h2>the FooterComponent</h2>
+            <FooterColumn>
+                <h3>About</h3>
+                <p>Git & GitHub workflow project. Learn, share, and contribute.</p>
+            </FooterColumn>
         </FooterContainer>
     )
 }
