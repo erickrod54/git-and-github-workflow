@@ -1,9 +1,9 @@
 import styled, { createGlobalStyle } from "styled-components"
 
-/**git-and-github-workflow  - version 3.18 - styledcomponent
+/**git-and-github-workflow  - version 3.20 - styledcomponent
  * - Features: 
  * 
- *     --> Refactoring 'SubTitle'      
+ *     --> writting 'FooterContainer'      
  * 
  * Note: this is the index components
 */
@@ -14,6 +14,29 @@ const breakpoints = {
     tablet: "768px",
     desktop: "1024px",
   };
+
+export const FooterContainer = styled.footer`
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    border: 2px solid #43628f;
+    border-radius: 12px;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    color: black;
+
+    /* Tablet */
+    @media (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    }
+
+    /* Phone */
+    @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+    text-align: left;
+    }
+`;
 
 export const FrecuencyValue = styled.span`
 
