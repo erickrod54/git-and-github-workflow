@@ -1,9 +1,9 @@
 import styled, { createGlobalStyle } from "styled-components"
 
-/**git-and-github-workflow  - version 3.20 - styledcomponent
+/**git-and-github-workflow  - version 4.00 - styledcomponent
  * - Features: 
  * 
- *     --> writting 'FooterContainer'      
+ *     --> writting 'FooterColumn'      
  * 
  * Note: this is the index components
 */
@@ -14,6 +14,38 @@ const breakpoints = {
     tablet: "768px",
     desktop: "1024px",
   };
+
+export const FooterColumn = styled.div`
+    h3 {
+        margin-bottom: 1rem;
+        font-size: 1.25rem;
+        color: #f4a261; /* Yellow */
+    }
+
+    p {
+        font-size: 1rem;
+        color: #4f6688; /* Light gray */
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 0.5rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: #93c5fd; /* Light blue */
+        transition: color 0.3s;
+
+        &:hover {
+            color: #60a5fa; /* Darker blue */
+        }
+    }
+`;
 
 export const FooterContainer = styled.footer`
     display: grid;
