@@ -2,6 +2,7 @@ import { BoxContainer,
          CardContainer,
          CommandsPalleteContainer,
          DescriptionBox,
+         FooterColumn,
          FooterContainer,
          FrecuencyTitle,
          FrecuencyValue,
@@ -11,7 +12,7 @@ import { BoxContainer,
 /**git-and-github-workflow  - version 3.20 - styled.components > index
  * - Features: 
  * 
- *     --> importing and Exporting 'FooterContainer' styles    
+ *     --> importing and Exporting 'FooterColumn' styles    
  * 
  * Note: this is the index components
  */
