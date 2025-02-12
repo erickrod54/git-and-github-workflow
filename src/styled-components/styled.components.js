@@ -1,9 +1,9 @@
 import styled, { createGlobalStyle } from "styled-components"
 
-/**git-and-github-workflow  - version 4.00 - styledcomponent
+/**git-and-github-workflow  - version 4.03 - styledcomponent
  * - Features: 
  * 
- *     --> writting 'FooterColumn'      
+ *     --> writting 'IconContainer'      
  * 
  * Note: this is the index components
 */
@@ -14,6 +14,23 @@ const breakpoints = {
     tablet: "768px",
     desktop: "1024px",
   };
+
+export const IconContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    a {
+        color: white;
+        font-size: 1.5rem;
+        transition: color 0.3s;
+
+        &:hover {
+            color: #fbbf24; /* Yellow */
+        }
+    }
+`;
 
 export const FooterColumn = styled.div`
     h3 {
