@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { FooterColumn, FooterContainer, IconContainer } from "../styled-components/styled.components";
-import { Github } from 'iconoir-react';
+import { Github, Linkedin } from 'iconoir-react';
 
-/**git-and-github-workflow  - version 4.04 - FooterComponent
+/**git-and-github-workflow  - version 4.05 - FooterComponent
  * - Features: 
  * 
- *     --> Adding Github Icon from iconoir   
+ *     --> Adding Linkedin Icon from iconoir   
  * 
  * Note: this is the index components
  */
@@ -34,8 +34,8 @@ const FooterComponent = () => {
                         <Github height={'3.0em'} width={'3.0em'} />
                         <p>Follow me 😊</p>
                     </a>
-                    <a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noopener noreferrer">
-                      
+                    <a href="https://www.linkedin.com/in/erickrodriguezcardenas/" target="_blank" rel="noopener noreferrer">
+                        <Linkedin height={'3.0em'} width={'3.0em'} />
                     </a>
                     <a href="https://twitter.com/yourtwitter" target="_blank" rel="noopener noreferrer">
                     
