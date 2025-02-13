@@ -1,31 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import { FooterColumn, FooterContainer } from "../styled-components/styled.components";
+import { FooterColumn, FooterContainer, IconContainer } from "../styled-components/styled.components";
 
-/**git-and-github-workflow  - version 4.02 - FooterComponent
+/**git-and-github-workflow  - version 4.03 - FooterComponent
  * - Features: 
  * 
- *     --> Adding 'FooterColumn'   
+ *     --> Migrating 'IconContainer'   
  * 
  * Note: this is the index components
  */
-
-const IconContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
-
-    a {
-        color: white;
-        font-size: 1.5rem;
-        transition: color 0.3s;
-
-        &:hover {
-            color: #fbbf24; /* Yellow */
-        }
-    }
-`;
 
 const FooterComponent = () => {
 
