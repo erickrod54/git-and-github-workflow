@@ -1,9 +1,9 @@
 import styled, { createGlobalStyle } from "styled-components"
 
-/**git-and-github-workflow  - version 4.03 - styledcomponent
+/**git-and-github-workflow  - version 4.04 - styledcomponent
  * - Features: 
  * 
- *     --> writting 'IconContainer'      
+ *     --> writting 'IconContainer' anchor tag color  and p props    
  * 
  * Note: this is the index components
 */
@@ -22,9 +22,17 @@ export const IconContainer = styled.div`
     margin-top: 1rem;
 
     a {
+        display: flex;
+        flex-direction:column;
+
+        p{
+            font-size: 1rem;
+        }
+
         color: white;
         font-size: 1.5rem;
         transition: color 0.3s;
+        color: black;
 
         &:hover {
             color: #fbbf24; /* Yellow */
