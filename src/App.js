@@ -1,11 +1,12 @@
 import React from "react";
 import HomePage from "./pages/home.page";
 import { GitGuideProvider } from "./context";
+import { HelmetProvider } from "react-helmet-async";
 
-/**git-and-github-workflow  - version 1.16 - App
+/**git-and-github-workflow  - version 4.07 - App
  * - Features: 
  * 
- *     --> Adding 'GitGuideProvider'    
+ *     --> Wrapping with 'HelmetProvider'    
  * 
  * Note: this is the index components
  */
@@ -14,9 +15,11 @@ import { GitGuideProvider } from "./context";
 function App() {
   return (
     <>
-    <GitGuideProvider>
-      <HomePage />
-    </GitGuideProvider>
+    <HelmetProvider>
+      <GitGuideProvider>
+        <HomePage />
+      </GitGuideProvider>
+    </HelmetProvider>
     </>
   );
 }
