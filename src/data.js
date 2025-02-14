@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 3.14 - data js
+/**git-and-github-workflow  - version 4.07 - data js
  * - Features: 
  *    
- *     --> Adding 'git reset' 
+ *     --> Reafactoring 'git reset' 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -69,6 +69,6 @@ export const gitCommands = [
       id:8,
       category:'git daily use',
       command:'git reset',
-      description:'his command will unstage the changes for the specified file, effectively removing it from the staging area while keeping your changes in the working directory.'
+      description:'This command will unstage the changes for the specified file, effectively removing it from the staging area while keeping your changes in the working directory.'
     },
 ]
