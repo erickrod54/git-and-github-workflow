@@ -1,12 +1,11 @@
 import React from "react";
-import styled from "styled-components";
 import { FooterColumn, FooterContainer, IconContainer } from "../styled-components/styled.components";
 import { Github, Linkedin, X } from 'iconoir-react';
 
-/**git-and-github-workflow  - version 4.07 - FooterComponent
+/**git-and-github-workflow  - version 4.08 - FooterComponent
  * - Features: 
  * 
- *     --> Refactoring Github Icon from iconoir   
+ *     --> Clearing imports   
  * 
  * Note: this is the index components
  */
