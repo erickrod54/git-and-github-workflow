@@ -1,12 +1,11 @@
 import React from "react";
-import styled from "styled-components";
 import { MainTitle } from "../styled-components/styled.components";
 import { useGitGuideContext } from "../context";
 
-/**git-and-github-workflow  - version 1.16 - HeaderComponent
+/**git-and-github-workflow  - version 4.08 - HeaderComponent
  * - Features: 
  * 
- *     --> Adding 'useGitGuideContext' hook    
+ *     --> Clearing imports    
  * 
  * Note: this is the index components
  */
