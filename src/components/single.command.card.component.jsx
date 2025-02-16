@@ -1,13 +1,12 @@
 import React from "react";
-import styled from "styled-components";
 import SingleCommand from "./single.command.component";
 import { useGitGuideContext } from "../context";
 import { BoxContainer, BoxContent, CardContainer, DescriptionBox, FrecuencyTitle, FrecuencyValue, StrongContainer, Title } from "../styled-components/styled.components";
 
-/**git-and-github-workflow  - version 3.10 - SingleCardCommand
+/**git-and-github-workflow  - version 4.08 - SingleCardCommand
  * - Features: 
  * 
- *     --> Migrating 'FrecuencyValue' 
+ *     --> Clearing imports
  *   
  * Note: this is the index components
  */
