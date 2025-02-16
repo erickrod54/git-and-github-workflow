@@ -1,12 +1,11 @@
 import React from "react"
 import BashCode from "./bash.code.component"
-import { useGitGuideContext } from "../context"
 import { SingleCommandContainer } from "../styled-components/styled.components"
 
-/**git-and-github-workflow  - version 4.08 - SingleCommand
+/**git-and-github-workflow  - version 4.09 - SingleCommand
  * - Features: 
  * 
- *     --> Clearing 'styled' import
+ *     --> Clearing 'useGitGuideContext' import
  * 
  * Note: this is the index components
  */
