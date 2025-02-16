@@ -1,13 +1,12 @@
 import React from "react";
-import styled from "styled-components";
 import { CommandsPallete, FooterComponent, HeaderComponent } from "../components/index.components";
 import { GlobalStyles, HomePageContainer, MainContent } from "../styled-components/styled.components";
 import { Helmet } from "react-helmet-async";
 
-/**git-and-github-workflow  - version 4.07 - HomePage
+/**git-and-github-workflow  - version 4.09 - HomePage
  * - Features: 
  * 
- *     --> Adding 'Helmet' for SEO and title    
+ *     --> Clearing imports
  * 
  * Note: this is the index components
  */
