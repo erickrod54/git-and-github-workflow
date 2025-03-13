@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 4.07 - data js
+/**git-and-github-workflow  - version 4.11 - data js
  * - Features: 
  *    
- *     --> Reafactoring 'git reset' 
+ *     --> Adding 'git remote -v' 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -71,4 +71,10 @@ export const gitCommands = [
       command:'git reset',
       description:'This command will unstage the changes for the specified file, effectively removing it from the staging area while keeping your changes in the working directory.'
     },
+    {
+      id:9,
+      category:'git often use',
+      command:'git remote -v',
+      description:'lists all the remote repositories linked to your local Git repository, showing their names (like origin) and their corresponding URLs. The -v (verbose) option displays both the fetch and push URLs for each remote.'
+    }
 ]

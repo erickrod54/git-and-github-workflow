@@ -2,10 +2,10 @@ import React from "react";
 import { FooterColumn, FooterContainer, IconContainer } from "../styled-components/styled.components";
 import { Github, Linkedin, X } from 'iconoir-react';
 
-/**git-and-github-workflow  - version 4.08 - FooterComponent
+/**git-and-github-workflow  - version 4.10 - FooterComponent
  * - Features: 
  * 
- *     --> Clearing imports   
+ *     --> Fixing href EsLint warning   
  * 
  * Note: this is the index components
  */
@@ -22,7 +22,7 @@ const FooterComponent = () => {
             <FooterColumn>
                 <h3>Links</h3>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="/#">Home</a></li>
                     <li><a href="https://github.com/erickrod54/git-and-github-workflow.git">Docs</a></li>
                     <li><a href="https://github.com/erickrod54/git-and-github-workflow.git">Community</a></li>
                 </ul>
