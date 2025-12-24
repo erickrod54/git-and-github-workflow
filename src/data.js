@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 4.12 - data js
+/**git-and-github-workflow  - version 4.13 - data js
  * - Features: 
  *    
- *     --> Adding 'git init' 
+ *     --> Adding 'git push' 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -82,5 +82,11 @@ export const gitCommands = [
       category:'git often use',
       command:'git init',
       description:'initializes a New Git respository in the current directory'
+    },
+    {
+      id:11,
+      category:'git often use',
+      command:'git push',
+      description:'Pushes local changes to a remote repository'
     }
 ]
