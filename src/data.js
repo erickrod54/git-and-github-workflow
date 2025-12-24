@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 4.11 - data js
+/**git-and-github-workflow  - version 4.12 - data js
  * - Features: 
  *    
- *     --> Adding 'git remote -v' 
+ *     --> Adding 'git init' 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -76,5 +76,11 @@ export const gitCommands = [
       category:'git often use',
       command:'git remote -v',
       description:'lists all the remote repositories linked to your local Git repository, showing their names (like origin) and their corresponding URLs. The -v (verbose) option displays both the fetch and push URLs for each remote.'
+    },
+    {
+      id:10,
+      category:'git often use',
+      command:'git init',
+      description:'initializes a New Git respository in the current directory'
     }
 ]
