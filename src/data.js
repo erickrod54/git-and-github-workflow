@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 4.18 - data js
+/**git-and-github-workflow  - version 4.19 - data js
  * - Features: 
  *    
- *     --> Adding 'git fetch' 
+ *     --> Adding 'git checkout' 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -112,5 +112,11 @@ export const gitCommands = [
       category:'git often use',
       command:'git fetch',
       description:'Retrives the latest data from a remote repository - but it doesn\'t integrate any of this new data into your working files'
-    }
+  },
+  {
+      id:16,
+      category:'git often use',
+      command:'git checkout',
+      description:'switches to the specified branch'
+  }
 ]
