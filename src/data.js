@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 4.15 - data js
+/**git-and-github-workflow  - version 4.16 - data js
  * - Features: 
  *    
- *     --> Adding 'git pull' 
+ *     --> Adding 'git remote' 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -94,5 +94,11 @@ export const gitCommands = [
       category:'git often use',
       command:'git pull',
       description:'Pull changes from a remote repository and merges into the local repository'
+  },
+  {
+      id:13,
+      category:'git often use',
+      command:'git remote',
+      description:'Add a remote repository, view it, and rename it'
     }
 ]
