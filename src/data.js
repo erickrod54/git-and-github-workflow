@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 4.17 - data js
+/**git-and-github-workflow  - version 4.18 - data js
  * - Features: 
  *    
- *     --> Adding 'git branch' 
+ *     --> Adding 'git fetch' 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -106,5 +106,11 @@ export const gitCommands = [
       category:'git often use',
       command:'git branch',
       description:'list all branches, create a new branch, with a specified name, and confirms it\'s created'
+  },
+  {
+      id:15,
+      category:'git often use',
+      command:'git fetch',
+      description:'Retrives the latest data from a remote repository - but it doesn\'t integrate any of this new data into your working files'
     }
 ]
