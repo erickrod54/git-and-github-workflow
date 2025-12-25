@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 4.19 - data js
+/**git-and-github-workflow  - version 4.20 - data js
  * - Features: 
  *    
- *     --> Adding 'git checkout' 
+ *     --> Adding 'git merge' 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -118,5 +118,11 @@ export const gitCommands = [
       category:'git often use',
       command:'git checkout',
       description:'switches to the specified branch'
-  }
+  },
+  {
+      id:17,
+      category:'git often use',
+      command:'git merge',
+      description:'Merges the specified branch into the current branch ( in this case main )'
+    }
 ]
