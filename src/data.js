@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 4.16 - data js
+/**git-and-github-workflow  - version 4.17 - data js
  * - Features: 
  *    
- *     --> Adding 'git remote' 
+ *     --> Adding 'git branch' 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -100,5 +100,11 @@ export const gitCommands = [
       category:'git often use',
       command:'git remote',
       description:'Add a remote repository, view it, and rename it'
+  },
+  {
+      id:14,
+      category:'git often use',
+      command:'git branch',
+      description:'list all branches, create a new branch, with a specified name, and confirms it\'s created'
     }
 ]
