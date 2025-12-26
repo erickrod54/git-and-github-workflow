@@ -5,12 +5,12 @@ import Prism from 'prismjs'; // You'll need to have Prism.js installed
 import 'prismjs/components/prism-cshtml';
 import { clipboard } from '../assets/index.assets';
 import styled from 'styled-components';
+import { toast } from 'sonner';
 
-
-/**git-and-github-workflow  - version 5.00 - BashCode
+/**git-and-github-workflow  - version 5.01 - BashCode
  * - Features: 
  * 
- *     --> Adding a 'fallback' for non https to clipboard  
+ *     --> Adding a 'toast' for notifications  
  * 
  * Note: this way it wont throw an error if the copy
  * clip
@@ -35,8 +35,8 @@ const BashCode = ({ code }) => {
         // Check if the modern Clipboard API is available
         if (navigator.clipboard && navigator.clipboard.writeText) {
             navigator.clipboard.writeText(textToCopy)
-                .then(() => console.log('Code copied!'))
-                .catch(err => console.error('Failed to copy:', err));
+                .then(() => toast.success('Git Code copied 😊'))
+                .catch(err => toast.error('An error occur 😕'));
         } else {
             // Fallback for non-HTTPS / older browsers
             try {
@@ -46,9 +46,10 @@ const BashCode = ({ code }) => {
                 textArea.select();
                 document.execCommand('copy');
                 document.body.removeChild(textArea);
-                console.log('Code copied using fallback!');
+                
+                toast.success('Git Code copied 😊')
             } catch (err) {
-                console.error('Fallback copy failed:', err);
+                toast.error('Fallback copy failed 🙁')
             }
         }
     }
