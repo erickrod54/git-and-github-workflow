@@ -2,13 +2,14 @@ import React from "react";
 import HomePage from "./pages/home.page";
 import { GitGuideProvider } from "./context";
 import { HelmetProvider } from "react-helmet-async";
+import { Toaster } from "sonner";
 
-/**git-and-github-workflow  - version 4.07 - App
+/**git-and-github-workflow  - version 5.01 - App
  * - Features: 
  * 
- *     --> Wrapping with 'HelmetProvider'    
+ *     --> Adding Toaster to 'root'    
  * 
- * Note: this is the index components
+ * Note: this will show the notifications
  */
 
 
@@ -17,6 +18,7 @@ function App() {
     <>
     <HelmetProvider>
       <GitGuideProvider>
+        <Toaster position="top-center" richColors/>
         <HomePage />
       </GitGuideProvider>
     </HelmetProvider>
