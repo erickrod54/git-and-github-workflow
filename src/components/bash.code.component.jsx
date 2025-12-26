@@ -7,18 +7,13 @@ import { clipboard } from '../assets/index.assets';
 import styled from 'styled-components';
 
 
-/**git-and-github-workflow  - version 3.13 - BashCode
+/**git-and-github-workflow  - version 5.00 - BashCode
  * - Features: 
  * 
- *     --> Incresing explicitly font size for 
- *          'token.cdata', and 'token.function'  
+ *     --> Adding a 'fallback' for non https to clipboard  
  * 
- * Note: to modify font sizes inspect the element, 
- * look for the font color and set a font size:
- * 
- *    token.function --> color:#f08d49
- * 
- * this way can be highly custom
+ * Note: this way it wont throw an error if the copy
+ * clip
  */
 
 const Okadia = styled.div`
@@ -34,16 +29,31 @@ const BashCode = ({ code }) => {
     }, []);
 
     const copyToClipboard = () => {
-        if (codeRef && codeRef.current) {
-            navigator.clipboard.writeText(codeRef.current.textContent)
-                .then(() => {
-                    console.log('Code copied to clipboard!');
-                })
-                .catch(err => {
-                    console.error('Failed to copy:', err);
-                });
+    if (codeRef && codeRef.current) {
+        const textToCopy = codeRef.current.textContent;
+
+        // Check if the modern Clipboard API is available
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(textToCopy)
+                .then(() => console.log('Code copied!'))
+                .catch(err => console.error('Failed to copy:', err));
+        } else {
+            // Fallback for non-HTTPS / older browsers
+            try {
+                const textArea = document.createElement("textarea");
+                textArea.value = textToCopy;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                console.log('Code copied using fallback!');
+            } catch (err) {
+                console.error('Fallback copy failed:', err);
+            }
         }
-    };
+    }
+};
+
 
     return (
         <Okadia>
