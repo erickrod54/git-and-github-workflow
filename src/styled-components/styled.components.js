@@ -1,12 +1,21 @@
 import styled, { createGlobalStyle } from "styled-components"
 
-/**git-and-github-workflow  - version 4.04 - styledcomponent
+/**git-and-github-workflow  - version 5.06 - styledcomponent
  * - Features: 
  * 
- *     --> writting 'IconContainer' anchor tag color  and p props    
+ *     --> Building 'SearchContainer'    
  * 
  * Note: this is the index components
 */
+
+//Styled components for SearchBar Component - Start
+export const SearchContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  padding: 0 20px;
+`;
 
 // Responsive breakpoints
 const breakpoints = {
