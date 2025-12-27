@@ -8,17 +8,19 @@ import { BoxContainer,
          FrecuencyValue,
          HomePageContainer,
          IconContainer,
+         SearchContainer,
          MainContent, MainTitle, SingleCommandContainer, StrongContainer, SubTitle } from "./styled.components";
 
-/**git-and-github-workflow  - version 4.10 - styled.components > index
+/**git-and-github-workflow  - version 5.06 - styled.components > index
  * - Features: 
  * 
- *     --> importing and Exporting 'FooterColumn' styles    
+ *     --> importing and Exporting 'SearchContainer' styles    
  * 
  * Note: this is the index components
  */
 
 export { HomePageContainer,
+         SearchContainer,
          MainContent,
          MainTitle, SubTitle,
          CommandsPalleteContainer,
