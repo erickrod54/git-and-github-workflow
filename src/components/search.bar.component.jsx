@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-/**git-and-github-workflow  - version 5.03 - SearchBar
+/**git-and-github-workflow  - version 5.04 - SearchBar
  * - Features: 
  * 
- * --> Building 'StyledInput'
+ * --> Building 'SearchIcon'
  */
 
 const SearchContainer = styled.div`
@@ -39,12 +39,20 @@ const StyledInput = styled.input`
   }
 `;
 
+const SearchIcon = styled.span`
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  pointer-events: none;
+`;
 
 const SearchBar = ({ searchTerm, setSearchTerm }) => {
     return (
         <SearchContainer>
             <div>
-                <div>🔍</div>
+                <SearchIcon>🔍</SearchIcon>
                 <StyledInput
                     type="text"
                     placeholder="Search commands..."
