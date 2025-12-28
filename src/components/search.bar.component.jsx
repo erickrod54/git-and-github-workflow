@@ -1,19 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import { SearchContainer } from '../styled-components/styled.components.index'
 
-/**git-and-github-workflow  - version 5.05 - SearchBar
+/**git-and-github-workflow  - version 5.06 - SearchBar
  * - Features: 
  * 
- * --> Building 'SearchWrapper'
+ * --> Migrating 'SearchContainer' 
  */
-
-const SearchContainer = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-  padding: 0 20px;
-`;
 
 const SearchWrapper = styled.div`
   position: relative;
