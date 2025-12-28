@@ -1,9 +1,9 @@
 import styled, { createGlobalStyle } from "styled-components"
 
-/**git-and-github-workflow  - version 5.06 - styledcomponent
+/**git-and-github-workflow  - version 5.07 - styledcomponent
  * - Features: 
  * 
- *     --> Building 'SearchContainer'    
+ *     --> Building 'SearchWrapper'    
  * 
  * Note: this is the index components
 */
@@ -16,6 +16,13 @@ export const SearchContainer = styled.div`
   margin-bottom: 40px;
   padding: 0 20px;
 `;
+
+export const SearchWrapper = styled.div`
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+`;
+//Styled components for SearchBar Component - End
 
 // Responsive breakpoints
 const breakpoints = {
