@@ -9,17 +9,19 @@ import { BoxContainer,
          HomePageContainer,
          IconContainer,
          SearchContainer,
+         SearchWrapper,
          MainContent, MainTitle, SingleCommandContainer, StrongContainer, SubTitle } from "./styled.components";
 
-/**git-and-github-workflow  - version 5.06 - styled.components > index
+/**git-and-github-workflow  - version 5.07 - styled.components > index
  * - Features: 
  * 
- *     --> importing and Exporting 'SearchContainer' styles    
+ *     --> importing and Exporting 'SearchWrapper' styles    
  * 
  * Note: this is the index components
  */
 
 export { HomePageContainer,
+         SearchWrapper,
          SearchContainer,
          MainContent,
          MainTitle, SubTitle,
