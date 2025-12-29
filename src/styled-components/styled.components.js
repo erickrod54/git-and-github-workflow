@@ -1,9 +1,9 @@
 import styled, { createGlobalStyle } from "styled-components"
 
-/**git-and-github-workflow  - version 5.08 - styledcomponent
+/**git-and-github-workflow  - version 5.09 - styledcomponent
  * - Features: 
  * 
- *     --> Building 'StyledInput'    
+ *     --> Building 'SearchIcon'    
  * 
  * Note: this is the index components
 */
@@ -43,6 +43,15 @@ export const StyledInput = styled.input`
     border-color: #9ae6b4; /* Light green focus to match your copy button */
     box-shadow: 0 0 0 4px rgba(154, 230, 180, 0.2);
   }
+`;
+
+export const SearchIcon = styled.span`
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  pointer-events: none;
 `;
 //Styled components for SearchBar Component - End
 
