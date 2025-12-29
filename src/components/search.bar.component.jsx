@@ -1,11 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
 import { SearchContainer, SearchWrapper, StyledInput, SearchIcon } from '../styled-components/styled.components.index'
 
-/**git-and-github-workflow  - version 5.09 - SearchBar
+/**git-and-github-workflow  - version 5.10 - SearchBar
  * - Features: 
  * 
- * --> Migrating 'SearchIcon' 
+ * --> Removing  'styled' 
  */
 
 const SearchBar = ({ searchTerm, setSearchTerm }) => {
