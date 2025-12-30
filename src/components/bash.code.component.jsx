@@ -7,10 +7,11 @@ import { clipboard } from '../assets/index.assets';
 import styled from 'styled-components';
 import { toast } from 'sonner';
 
-/**git-and-github-workflow  - version 5.01 - BashCode
+/**git-and-github-workflow  - version 5.13 - BashCode
  * - Features: 
  * 
- *     --> Adding a 'toast' for notifications  
+ *     --> Building and storaging 'currentCount' to
+ *         'localStorage'  
  * 
  * Note: this way it wont throw an error if the copy
  * clip
@@ -31,6 +32,12 @@ const BashCode = ({ code }) => {
     const copyToClipboard = () => {
     if (codeRef && codeRef.current) {
         const textToCopy = codeRef.current.textContent;
+
+        // -- NEW LOGIC: Track the copy count
+        // We use the 'code' itself or unique ID as the key
+        const currentCount = Number(localStorage.getItem(textToCopy)) || 0;
+
+        localStorage.setItem(textToCopy, currentCount + 1)
 
         // Check if the modern Clipboard API is available
         if (navigator.clipboard && navigator.clipboard.writeText) {
