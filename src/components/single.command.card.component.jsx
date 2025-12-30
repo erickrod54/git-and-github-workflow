@@ -3,24 +3,39 @@ import SingleCommand from "./single.command.component";
 import { useGitGuideContext } from "../context";
 import { BoxContainer, BoxContent, CardContainer, DescriptionBox, FrecuencyTitle, FrecuencyValue, StrongContainer, Title } from "../styled-components/styled.components";
 
-/**git-and-github-workflow  - version 4.08 - SingleCardCommand
+/**git-and-github-workflow  - version 5.11 - SingleCardCommand
  * - Features: 
  * 
- *     --> Clearing imports
+ *     --> Building 'filterCommands' array
  *   
- * Note: this is the index components
+ * Note: In order to implement the search 'filterCommands'
+ * makes a new array from 'gitCommands' and then show the 
+ * results from the 'value' entered by the user 
  */
 
 
-const SingleCardComponent = () => {
+const SingleCardComponent = ({ searchTerm = "" }) => {
 
     const { gitCommands } = useGitGuideContext();
+
+    const filterCommands = gitCommands.filter((cmd) => {
+    // 1. Ensure searchTerm exists (fallback to empty string)
+    const search = (searchTerm || "").toLowerCase();
+
+    // 2. Use the correct keys from your JSON (command, category, description)
+    return (
+        (cmd.command && cmd.command.toLowerCase().includes(search)) ||
+        (cmd.category && cmd.category.toLowerCase().includes(search)) ||
+        (cmd.description && cmd.description.toLowerCase().includes(search))
+    );
+});
+
 
     console.log('this is the gitCommands data in SingleCardComponent ==>', gitCommands)
 
     return(
     <CardContainer>
-            {gitCommands.map((commands) => {
+            {filterCommands.map((commands) => {
                 const { category, description, command, id } = commands;
                 
                 return(
