@@ -1,12 +1,14 @@
-import React from "react";
-import { CommandsPallete, FooterComponent, HeaderComponent } from "../components/index.components";
+import React, { useState } from "react";
+import { CommandsPallete, FooterComponent, HeaderComponent, SearchBar } from "../components/index.components";
 import { GlobalStyles, HomePageContainer, MainContent } from "../styled-components/styled.components";
 import { Helmet } from "react-helmet-async";
-
-/**git-and-github-workflow  - version 4.09 - HomePage
+ 
+/**git-and-github-workflow  - version 5.11 - HomePage
  * - Features: 
  * 
- *     --> Clearing imports
+ *     --> Lifting 'searchTerm' to the root
+ * 
+ *     --> Passing down states to 'SearchBar' and 'CommandPallete'
  * 
  * Note: this is the index components
  */
@@ -14,7 +16,8 @@ import { Helmet } from "react-helmet-async";
 
 
 const HomePage = () => {
-
+    const [searchTerm, setSearchTerm] = useState(""); //Lifted state
+    
     return(
         <>
         <GlobalStyles />
@@ -25,7 +28,13 @@ const HomePage = () => {
         <HomePageContainer>
             <MainContent>
                 <HeaderComponent title={'Welcome to the Git and GitHub Workflow guide!'}/>
-                <CommandsPallete />
+                    <SearchBar
+                        searchTerm={searchTerm}
+                        setSearchTerm={setSearchTerm}
+                    />
+                    <CommandsPallete
+                        searchTerm={searchTerm}
+                    />
                 <FooterComponent />
             </MainContent>
         </HomePageContainer>
