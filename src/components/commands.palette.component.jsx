@@ -3,16 +3,16 @@ import SingleCardComponent from "./single.command.card.component";
 import { CommandsPalleteContainer, SubTitle } from "../styled-components/styled.components";
 import { useGitGuideContext } from "../context";
 
-/**git-and-github-workflow  - version 4.08 - CommandsPallete
+/**git-and-github-workflow  - version 5.11 - CommandsPallete
  * - Features: 
  * 
- *     --> Clearing imports  
+ *     --> Paasing down 'searchTerm'  
  * 
  * Note: this is the index components
  */
 
 
-const CommandsPallete = () => {
+const CommandsPallete = ({ searchTerm }) => {
 
     const { TitlesData } = useGitGuideContext();
 
@@ -21,7 +21,7 @@ const CommandsPallete = () => {
     return(
         <CommandsPalleteContainer>
             <SubTitle>{subtitle1}</SubTitle>
-            <SingleCardComponent />
+            <SingleCardComponent searchTerm={searchTerm} />
         </CommandsPalleteContainer>
     )
 }
