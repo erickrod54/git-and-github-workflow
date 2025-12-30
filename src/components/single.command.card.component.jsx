@@ -2,11 +2,12 @@ import React from "react";
 import SingleCommand from "./single.command.component";
 import { useGitGuideContext } from "../context";
 import { BoxContainer, BoxContent, CardContainer, DescriptionBox, FrecuencyTitle, FrecuencyValue, StrongContainer, Title } from "../styled-components/styled.components";
+import { toast } from "sonner";
 
-/**git-and-github-workflow  - version 5.11 - SingleCardCommand
+/**git-and-github-workflow  - version 5.12 - SingleCardCommand
  * - Features: 
  * 
- *     --> Building 'filterCommands' array
+ *     --> Adding notification when 'no match found'
  *   
  * Note: In order to implement the search 'filterCommands'
  * makes a new array from 'gitCommands' and then show the 
@@ -34,20 +35,23 @@ const SingleCardComponent = ({ searchTerm = "" }) => {
     console.log('this is the gitCommands data in SingleCardComponent ==>', gitCommands)
 
     return(
-    <CardContainer>
-            {filterCommands.map((commands) => {
-                const { category, description, command, id } = commands;
-                
-                return(
-                <BoxContainer key={id}>
-                    <Title>{category}</Title>
-                    <BoxContent>
-                    <SingleCommand command={command}/>    
-                    <StrongContainer>Description</StrongContainer>
-                        <DescriptionBox>{description}</DescriptionBox>
-                        <FrecuencyTitle>frecuency</FrecuencyTitle> <FrecuencyValue> - most use</FrecuencyValue>
-                    </BoxContent>
-                </BoxContainer>        
+        <CardContainer>
+            {filterCommands.length === 0 ?
+                toast.error('no match result 🥹, try again!')
+                :
+                filterCommands.map((commands) => {
+                    const { category, description, command, id } = commands;
+                    
+                    return(
+                    <BoxContainer key={id}>
+                        <Title>{category}</Title>
+                        <BoxContent>
+                        <SingleCommand command={command}/>    
+                        <StrongContainer>Description</StrongContainer>
+                            <DescriptionBox>{description}</DescriptionBox>
+                            <FrecuencyTitle>frecuency</FrecuencyTitle> <FrecuencyValue> - most use</FrecuencyValue>
+                        </BoxContent>
+                    </BoxContainer>        
                 )
             })}
     </CardContainer>
