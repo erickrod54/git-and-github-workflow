@@ -6,10 +6,10 @@ import { toast } from "sonner";
 import { getFrequencyLabel } from "../utils/utils";
 import styled from "styled-components";
 
-/**git-and-github-workflow  - version 5.16 - SingleCardCommand
+/**git-and-github-workflow  - version 5.17 - SingleCardCommand
  * - Features: 
  * 
- *     --> Implementing 'FrequencyBadge'
+ *     --> Making 'label' var
  *   
  * Note: In order to implement the search 'filterCommands'
  * makes a new array from 'gitCommands' and then show the 
@@ -77,6 +77,8 @@ const SingleCardComponent = ({ searchTerm = "" }) => {
                 filterCommands.map((commands) => {
                     const { category, description, command, id } = commands;
                     
+                    const label = getFrequencyLabel(command);
+
                     return(
                     <BoxContainer key={id}>
                         <Title>{category}</Title>
