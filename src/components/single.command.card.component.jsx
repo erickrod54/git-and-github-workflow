@@ -3,11 +3,12 @@ import SingleCommand from "./single.command.component";
 import { useGitGuideContext } from "../context";
 import { BoxContainer, BoxContent, CardContainer, DescriptionBox, FrecuencyTitle, FrecuencyValue, StrongContainer, Title } from "../styled-components/styled.components";
 import { toast } from "sonner";
+import { getFrequencyLabel } from "../utils/utils";
 
-/**git-and-github-workflow  - version 5.12 - SingleCardCommand
+/**git-and-github-workflow  - version 5.13 - SingleCardCommand
  * - Features: 
  * 
- *     --> Adding notification when 'no match found'
+ *     --> Implementing 'getFrequencyLabel'
  *   
  * Note: In order to implement the search 'filterCommands'
  * makes a new array from 'gitCommands' and then show the 
@@ -49,7 +50,7 @@ const SingleCardComponent = ({ searchTerm = "" }) => {
                         <SingleCommand command={command}/>    
                         <StrongContainer>Description</StrongContainer>
                             <DescriptionBox>{description}</DescriptionBox>
-                            <FrecuencyTitle>frecuency</FrecuencyTitle> <FrecuencyValue> - most use</FrecuencyValue>
+                            <FrecuencyTitle>frecuency</FrecuencyTitle> <FrecuencyValue> - {getFrequencyLabel(command)}</FrecuencyValue>
                         </BoxContent>
                     </BoxContainer>        
                 )
