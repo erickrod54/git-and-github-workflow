@@ -6,10 +6,10 @@ import { toast } from "sonner";
 import { getFrequencyLabel } from "../utils/utils";
 import styled from "styled-components";
 
-/**git-and-github-workflow  - version 5.14 - SingleCardCommand
+/**git-and-github-workflow  - version 5.15 - SingleCardCommand
  * - Features: 
  * 
- *     --> Building 'FrequencyBadge'
+ *     --> Building 'FrequencyLabel'
  *   
  * Note: In order to implement the search 'filterCommands'
  * makes a new array from 'gitCommands' and then show the 
@@ -42,6 +42,11 @@ const FrequencyBadge = styled.div`
     props.level === 'Less use 📈' ? '#16a34a' : '#6b7280'};
 
   border: 1px solid rgba(0,0,0,0.05);
+`;
+
+const FrequencyLabel = styled.span`
+  opacity: 0.7;
+  font-weight: 400;
 `;
 
 
