@@ -1,15 +1,15 @@
 import React from "react";
 import SingleCommand from "./single.command.component";
 import { useGitGuideContext } from "../context";
-import { BoxContainer, BoxContent, CardContainer, DescriptionBox, FrecuencyTitle, FrecuencyValue, StrongContainer, Title } from "../styled-components/styled.components";
+import { BoxContainer, BoxContent, CardContainer, DescriptionBox, FrecuencyValue, StrongContainer, Title } from "../styled-components/styled.components";
 import { toast } from "sonner";
 import { getFrequencyLabel } from "../utils/utils";
 import styled from "styled-components";
 
-/**git-and-github-workflow  - version 5.20 - SingleCardCommand
+/**git-and-github-workflow  - version 6.00 - SingleCardCommand
  * - Features: 
  * 
- *     --> Implementing 'FrequencyLabel'
+ *     --> Clearing 'FrecuencyTitle'
  *   
  * Note: In order to implement the search 'filterCommands'
  * makes a new array from 'gitCommands' and then show the 
