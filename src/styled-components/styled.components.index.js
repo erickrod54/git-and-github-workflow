@@ -4,7 +4,6 @@ import { BoxContainer,
          DescriptionBox,
          FooterColumn,
          FooterContainer,
-         FrecuencyTitle,
          FrecuencyValue,
          HomePageContainer,
          IconContainer,
@@ -14,10 +13,10 @@ import { BoxContainer,
          SearchIcon,
          MainContent, MainTitle, SingleCommandContainer, StrongContainer, SubTitle } from "./styled.components";
 
-/**git-and-github-workflow  - version 5.09 - styled.components > index
+/**git-and-github-workflow  - version 6.00 - styled.components > index
  * - Features: 
  * 
- *     --> importing and Exporting 'SearchIcon' styles    
+ *     --> Clearing 'FrecuencyTitle' from index styles    
  * 
  * Note: this is the index components
  */
@@ -31,7 +30,6 @@ export { HomePageContainer,
          MainTitle, SubTitle,
          CommandsPalleteContainer,
          SingleCommandContainer,
-         FrecuencyTitle,
          FrecuencyValue,
          FooterColumn,
          FooterContainer,
