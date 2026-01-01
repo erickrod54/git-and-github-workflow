@@ -6,10 +6,10 @@ import { toast } from "sonner";
 import { getFrequencyLabel } from "../utils/utils";
 import styled from "styled-components";
 
-/**git-and-github-workflow  - version 5.18 - SingleCardCommand
+/**git-and-github-workflow  - version 5.19 - SingleCardCommand
  * - Features: 
  * 
- *     --> Placing 'label' var
+ *     --> Passing down level to the styled component & Wrapping
  *   
  * Note: In order to implement the search 'filterCommands'
  * makes a new array from 'gitCommands' and then show the 
@@ -86,7 +86,9 @@ const SingleCardComponent = ({ searchTerm = "" }) => {
                         <SingleCommand command={command}/>    
                         <StrongContainer>Description</StrongContainer>
                             <DescriptionBox>{description}</DescriptionBox>
-                            <FrequencyBadge>Usage: </FrequencyBadge> <FrecuencyValue> - {label}</FrecuencyValue>
+                                <FrequencyBadge level={label}>
+                                    <FrecuencyValue> - {label}</FrecuencyValue>
+                                </FrequencyBadge>
                         </BoxContent>
                     </BoxContainer>        
                 )
