@@ -1,9 +1,9 @@
 import styled, { createGlobalStyle } from "styled-components"
 
-/**git-and-github-workflow  - version 5.09 - styledcomponent
+/**git-and-github-workflow  - version 6.00 - styledcomponent
  * - Features: 
  * 
- *     --> Building 'SearchIcon'    
+ *     --> Removing 'FrecuencyTitle'    
  * 
  * Note: this is the index components
 */
@@ -143,10 +143,6 @@ export const FooterContainer = styled.footer`
 `;
 
 export const FrecuencyValue = styled.span`
-
-`
-
-export const FrecuencyTitle = styled.span`
 
 `  
 
