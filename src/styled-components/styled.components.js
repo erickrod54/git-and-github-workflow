@@ -1,9 +1,9 @@
 import styled, { createGlobalStyle } from "styled-components"
 
-/**git-and-github-workflow  - version 6.00 - styledcomponent
+/**git-and-github-workflow  - version 6.01 - styledcomponent
  * - Features: 
  * 
- *     --> Removing 'FrecuencyTitle'    
+ *     --> Removing 'FrecuencyValue'    
  * 
  * Note: this is the index components
 */
@@ -140,11 +140,7 @@ export const FooterContainer = styled.footer`
     grid-template-columns: 1fr;
     text-align: left;
     }
-`;
-
-export const FrecuencyValue = styled.span`
-
-`  
+`;  
 
 export const DescriptionBox = styled.p`
 
