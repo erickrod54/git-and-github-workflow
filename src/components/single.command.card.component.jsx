@@ -1,15 +1,15 @@
 import React from "react";
 import SingleCommand from "./single.command.component";
 import { useGitGuideContext } from "../context";
-import { BoxContainer, BoxContent, CardContainer, DescriptionBox, StrongContainer, Title } from "../styled-components/styled.components";
+import { BoxContainer, BoxContent, CardContainer, DescriptionBox, StrongContainer, Title, FrequencyLabel } from "../styled-components/styled.components";
 import { toast } from "sonner";
 import { getFrequencyLabel } from "../utils/utils";
 import styled from "styled-components";
 
-/**git-and-github-workflow  - version 6.01 - SingleCardCommand
+/**git-and-github-workflow  - version 6.02 - SingleCardCommand
  * - Features: 
  * 
- *     --> Clearing 'FrecuencyValue'
+ *     --> Migrating 'FrequencyLabel'
  *   
  * Note: In order to implement the search 'filterCommands'
  * makes a new array from 'gitCommands' and then show the 
@@ -42,11 +42,6 @@ const FrequencyBadge = styled.div`
     props.level === 'Less use 📈' ? '#16a34a' : '#6b7280'};
 
   border: 1px solid rgba(0,0,0,0.05);
-`;
-
-const FrequencyLabel = styled.span`
-  opacity: 0.7;
-  font-weight: 400;
 `;
 
 
