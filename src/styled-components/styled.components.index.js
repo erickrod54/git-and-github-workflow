@@ -10,17 +10,19 @@ import { BoxContainer,
          SearchWrapper,
          StyledInput,
          SearchIcon,
+         FrequencyLabel,
          MainContent, MainTitle, SingleCommandContainer, StrongContainer, SubTitle } from "./styled.components";
 
-/**git-and-github-workflow  - version 6.01 - styled.components > index
+/**git-and-github-workflow  - version 6.02 - styled.components > index
  * - Features: 
  * 
- *     --> Clearing 'FrecuencyValue' from index styles    
+ *     --> Importing and exporting 'FrequencyLabel'  
  * 
  * Note: this is the index components
  */
 
 export { HomePageContainer,
+         FrequencyLabel,
          SearchIcon,
          StyledInput,
          SearchWrapper,
