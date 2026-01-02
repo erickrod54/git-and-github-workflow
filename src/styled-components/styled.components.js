@@ -1,12 +1,20 @@
 import styled, { createGlobalStyle } from "styled-components"
 
-/**git-and-github-workflow  - version 6.01 - styledcomponent
+/**git-and-github-workflow  - version 6.02 - styledcomponent
  * - Features: 
  * 
- *     --> Removing 'FrecuencyValue'    
+ *     --> Building 'FrequencyLabel'    
  * 
  * Note: this is the index components
 */
+
+//Styles for SingleCardComponent - Start
+export const FrequencyLabel = styled.span`
+  opacity: 0.7;
+  font-weight: 400;
+`;
+
+//Styles for SingleCardComponent - End
 
 //Styled components for SearchBar Component - Start
 export const SearchContainer = styled.div`
