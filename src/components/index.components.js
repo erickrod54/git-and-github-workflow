@@ -1,16 +1,17 @@
 import CommandsPallete from "./commands.palette.component";
 import FooterComponent from "./footer.component";
 import HeaderComponent from "./header.component";
+import HighlightedText from "./highlight.component";
 import SearchBar from "./search.bar.component";
 import SingleCardComponent from "./single.command.card.component";
 import SingleCommand from "./single.command.component";
 
-/**git-and-github-workflow  - version 5.11 - components > index
+/**git-and-github-workflow  - version 6.05 - components > index
  * - Features: 
  * 
- *     --> Importing and exporting 'SearchBar'    
+ *     --> Importing and exporting 'HighlightedText'    
  * 
  * Note: this is the index components
  */
 
-export { HeaderComponent, FooterComponent, CommandsPallete, SingleCommand, SingleCardComponent, SearchBar }
+export { HeaderComponent, FooterComponent, CommandsPallete, SingleCommand, SingleCardComponent, SearchBar, HighlightedText }
