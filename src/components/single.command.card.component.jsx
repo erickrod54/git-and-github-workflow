@@ -1,12 +1,12 @@
 import React from "react";
 import SingleCommand from "./single.command.component";
 import { useGitGuideContext } from "../context";
-import { BoxContainer, BoxContent, CardContainer, DescriptionBox, StrongContainer, Title, FrequencyLabel } from "../styled-components/styled.components";
+import { BoxContainer, BoxContent, CardContainer, DescriptionBox, StrongContainer, Title, FrequencyLabel, FrequencyBadge } from "../styled-components/styled.components";
 import { toast } from "sonner";
 import { getFrequencyLabel } from "../utils/utils";
 import styled from "styled-components";
 
-/**git-and-github-workflow  - version 6.02 - SingleCardCommand
+/**git-and-github-workflow  - version 6.03 - SingleCardCommand
  * - Features: 
  * 
  *     --> Migrating 'FrequencyLabel'
@@ -15,34 +15,6 @@ import styled from "styled-components";
  * makes a new array from 'gitCommands' and then show the 
  * results from the 'value' entered by the user 
  */
-
-// This replaces 'FrecuencyTitle' and Value for a cleaner "Badge" look
-const FrequencyBadge = styled.div`
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 15px;
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-family: 'Inter', sans-serif;
-  font-size: 0.9rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  
-  /* Background and text color based on the status */
-  background: ${props => 
-    props.level === 'Always use 🔥' ? '#fee2e2' : 
-    props.level === 'Often use ⚡' ? '#fef3c7' : 
-    props.level === 'Less use 📈' ? '#dcfce7' : '#f3f4f6'};
-    
-  color: ${props => 
-    props.level === 'Always use 🔥' ? '#dc2626' : 
-    props.level === 'Often use ⚡' ? '#d97706' : 
-    props.level === 'Less use 📈' ? '#16a34a' : '#6b7280'};
-
-  border: 1px solid rgba(0,0,0,0.05);
-`;
 
 
 const SingleCardComponent = ({ searchTerm = "" }) => {
