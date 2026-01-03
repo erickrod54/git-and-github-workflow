@@ -4,12 +4,11 @@ import { useGitGuideContext } from "../context";
 import { BoxContainer, BoxContent, CardContainer, DescriptionBox, StrongContainer, Title, FrequencyLabel, FrequencyBadge } from "../styled-components/styled.components";
 import { toast } from "sonner";
 import { getFrequencyLabel } from "../utils/utils";
-import styled from "styled-components";
 
-/**git-and-github-workflow  - version 6.03 - SingleCardCommand
+/**git-and-github-workflow  - version 6.04 - SingleCardCommand
  * - Features: 
  * 
- *     --> Migrating 'FrequencyLabel'
+ *     --> Removing 'styled'
  *   
  * Note: In order to implement the search 'filterCommands'
  * makes a new array from 'gitCommands' and then show the 
