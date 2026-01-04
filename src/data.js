@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 6.09 - data js
+/**git-and-github-workflow  - version 6.10 - data js
  * - Features: 
  *    
- *     --> Adding 'git add .' to description 
+ *     --> Adding 'git -m commit "commit message" .' to description 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -45,7 +45,7 @@ export const gitCommands = [
       id:4,
       category:'git daily use',
       command:'git commit -m "commit message"',
-      description:'Replace "commit message" with a brief description of the changes that you made'
+      description:'git commit -m "commit message" Replace "commit message" with a brief description of the changes that you made'
     },
     {
       id:5,
