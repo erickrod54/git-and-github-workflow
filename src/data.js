@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 4.20 - data js
+/**git-and-github-workflow  - version 6.07 - data js
  * - Features: 
  *    
- *     --> Adding 'git merge' 
+ *     --> Adding 'git status' to description 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -27,7 +27,7 @@ export const gitCommands = [
       id:1,
       category:'git daily use',
       command:'git status',
-      description:'Track new files, show the current state of your working directory and staging area. It helps you see which changes have been staged, which haven’t, and which files aren’t being tracked by Git.'
+      description:'git status track new files, show the current state of your working directory and staging area. It helps you see which changes have been staged, which haven’t, and which files aren’t being tracked by Git.'
     },
     {
       id:2,
