@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 6.08 - data js
+/**git-and-github-workflow  - version 6.09 - data js
  * - Features: 
  *    
- *     --> Adding 'git add' to description 
+ *     --> Adding 'git add .' to description 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -39,7 +39,7 @@ export const gitCommands = [
       id:3,
       category:'git daily use',
       command:'git add .',
-      description:'Represents the current directory, meaning all new, modified, or deleted files will be staged'
+      description:'git add . Represents the current directory, meaning all new, modified, or deleted files will be staged'
     },
     {
       id:4,
