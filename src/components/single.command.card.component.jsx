@@ -4,15 +4,14 @@ import { useGitGuideContext } from "../context";
 import { BoxContainer, BoxContent, CardContainer, DescriptionBox, StrongContainer, Title, FrequencyLabel, FrequencyBadge } from "../styled-components/styled.components";
 import { toast } from "sonner";
 import { getFrequencyLabel } from "../utils/utils";
+import { HighlightedText } from "./index.components";
 
-/**git-and-github-workflow  - version 6.04 - SingleCardCommand
+/**git-and-github-workflow  - version 6.05 - SingleCardCommand
  * - Features: 
  * 
- *     --> Removing 'styled'
+ *     --> Adding 'HighlightedText'
  *   
- * Note: In order to implement the search 'filterCommands'
- * makes a new array from 'gitCommands' and then show the 
- * results from the 'value' entered by the user 
+ * Note: commands have to be added to the description 
  */
 
 
@@ -51,6 +50,7 @@ const SingleCardComponent = ({ searchTerm = "" }) => {
                         <BoxContent>
                         <SingleCommand command={command}/>    
                         <StrongContainer>Description</StrongContainer>
+                                <HighlightedText text={description} highlight={searchTerm} />
                             <DescriptionBox>{description}</DescriptionBox>
                                 <FrequencyBadge level={label}>
                                     <FrequencyLabel>{label}</FrequencyLabel>
