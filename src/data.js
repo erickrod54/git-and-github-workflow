@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 6.07 - data js
+/**git-and-github-workflow  - version 6.08 - data js
  * - Features: 
  *    
- *     --> Adding 'git status' to description 
+ *     --> Adding 'git add' to description 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -33,7 +33,7 @@ export const gitCommands = [
       id:2,
       category:'git daily use',
       command:'git add',
-      description:'If a file is modified but unstaged, use git add <file> to stage it'
+      description:'git add for a file is modified but unstaged, use git add <file> to stage it'
     },
     {
       id:3,
