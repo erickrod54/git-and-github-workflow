@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 6.12 - data js
+/**git-and-github-workflow  - version 6.13 - data js
  * - Features: 
  *    
- *     --> Adding 'git log --oneline' to description 
+ *     --> Adding 'git log -p' 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -124,5 +124,11 @@ export const gitCommands = [
       category:'git often use',
       command:'git merge',
       description:'Merges the specified branch into the current branch ( in this case main )'
-    }
+  },
+  {
+      id: 18,
+      category: 'git daily use',
+      command: 'git log -p',
+      description: 'git log -p shows the commit history including the actual diff (the changes) made in each commit.'
+  },
 ]
