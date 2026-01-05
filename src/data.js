@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 6.13 - data js
+/**git-and-github-workflow  - version 6.14 - data js
  * - Features: 
  *    
- *     --> Adding 'git log -p' 
+ *     --> Adding 'git log' 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -131,4 +131,10 @@ export const gitCommands = [
       command: 'git log -p',
       description: 'git log -p shows the commit history including the actual diff (the changes) made in each commit.'
   },
+  {
+      id: 19,
+      category: 'git daily use',
+      command: 'git log',
+      description: 'git log shows the commit history for the current repository.'
+  }
 ]
