@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 6.14 - data js
+/**git-and-github-workflow  - version 6.15 - data js
  * - Features: 
  *    
- *     --> Adding 'git log' 
+ *     --> Adding 'git reset HEAD~n' to description 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -63,7 +63,7 @@ export const gitCommands = [
       id:7,
       category:'git daily use',
       command:'git reset HEAD~1',
-      description:'This command will list the commits with their hash values. Identify the commit you want to edit and note its hash'
+      description:'git reset HEADC~n this command will list the commits with their hash values. Identify the commit you want to edit and note its hash'
     },
     {
       id:8,
