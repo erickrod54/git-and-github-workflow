@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 6.15 - data js
+/**git-and-github-workflow  - version 6.16 - data js
  * - Features: 
  *    
- *     --> Adding 'git reset HEAD~n' to description 
+ *     --> Adding 'git reset' to description 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -69,7 +69,7 @@ export const gitCommands = [
       id:8,
       category:'git daily use',
       command:'git reset',
-      description:'This command will unstage the changes for the specified file, effectively removing it from the staging area while keeping your changes in the working directory.'
+      description:'git reset this command will unstage the changes for the specified file, effectively removing it from the staging area while keeping your changes in the working directory.'
     },
     {
       id:9,
