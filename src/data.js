@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 6.16 - data js
+/**git-and-github-workflow  - version 6.17 - data js
  * - Features: 
  *    
- *     --> Adding 'git reset' to description 
+ *     --> Adding 'git remote -v' to description 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -75,7 +75,7 @@ export const gitCommands = [
       id:9,
       category:'git often use',
       command:'git remote -v',
-      description:'lists all the remote repositories linked to your local Git repository, showing their names (like origin) and their corresponding URLs. The -v (verbose) option displays both the fetch and push URLs for each remote.'
+      description:'git remote -v lists all the remote repositories linked to your local Git repository, showing their names (like origin) and their corresponding URLs. The -v (verbose) option displays both the fetch and push URLs for each remote.'
     },
     {
       id:10,
