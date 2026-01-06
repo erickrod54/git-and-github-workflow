@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 6.19 - data js
+/**git-and-github-workflow  - version 6.20 - data js
  * - Features: 
  *    
- *     --> Adding 'git push' to description 
+ *     --> Adding 'git pull' to description 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -93,7 +93,7 @@ export const gitCommands = [
       id:12,
       category:'git often use',
       command:'git pull',
-      description:'Pull changes from a remote repository and merges into the local repository'
+      description:'git pull bring changes from a remote repository and merges into the local repository'
   },
   {
       id:13,
