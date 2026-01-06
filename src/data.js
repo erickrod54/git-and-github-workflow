@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 6.20 - data js
+/**git-and-github-workflow  - version 7.00 - data js
  * - Features: 
  *    
- *     --> Adding 'git pull' to description 
+ *     --> Adding 'git remote' to description 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -99,7 +99,7 @@ export const gitCommands = [
       id:13,
       category:'git often use',
       command:'git remote',
-      description:'Add a remote repository, view it, and rename it'
+      description:'git remote add a remote repository, view it, and rename it'
   },
   {
       id:14,
