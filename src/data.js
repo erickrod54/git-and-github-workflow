@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 7.01 - data js
+/**git-and-github-workflow  - version 7.02 - data js
  * - Features: 
  *    
- *     --> Adding 'git branch' to description 
+ *     --> Adding 'git fetch' to description 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -111,7 +111,7 @@ export const gitCommands = [
       id:15,
       category:'git often use',
       command:'git fetch',
-      description:'Retrives the latest data from a remote repository - but it doesn\'t integrate any of this new data into your working files'
+      description:'git fetch retrives the latest data from a remote repository - but it doesn\'t integrate any of this new data into your working files'
   },
   {
       id:16,
