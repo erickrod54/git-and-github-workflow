@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 7.00 - data js
+/**git-and-github-workflow  - version 7.01 - data js
  * - Features: 
  *    
- *     --> Adding 'git remote' to description 
+ *     --> Adding 'git branch' to description 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -105,7 +105,7 @@ export const gitCommands = [
       id:14,
       category:'git often use',
       command:'git branch',
-      description:'list all branches, create a new branch, with a specified name, and confirms it\'s created'
+      description:'git branch list all branches, create a new branch, with a specified name, and confirms it\'s created'
   },
   {
       id:15,
