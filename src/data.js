@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 6.17 - data js
+/**git-and-github-workflow  - version 6.18 - data js
  * - Features: 
  *    
- *     --> Adding 'git remote -v' to description 
+ *     --> Adding 'git init' to description 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -81,7 +81,7 @@ export const gitCommands = [
       id:10,
       category:'git often use',
       command:'git init',
-      description:'initializes a New Git respository in the current directory'
+      description:'git init initializes a New Git respository in the current directory'
     },
     {
       id:11,
