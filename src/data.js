@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 7.02 - data js
+/**git-and-github-workflow  - version 7.03 - data js
  * - Features: 
  *    
- *     --> Adding 'git fetch' to description 
+ *     --> Adding 'git checkout' to description 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -117,7 +117,7 @@ export const gitCommands = [
       id:16,
       category:'git often use',
       command:'git checkout',
-      description:'switches to the specified branch'
+      description:'git checkout switches to the specified branch'
   },
   {
       id:17,
