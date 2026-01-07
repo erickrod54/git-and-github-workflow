@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 7.05 - data js
+/**git-and-github-workflow  - version 7.06 - data js
  * - Features: 
  *    
- *     --> Adding 'git log --graph --oneline --all' 
+ *     --> Adding 'git log --graph --oneline --all' to description
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -141,6 +141,6 @@ export const gitCommands = [
       id: 20,
       category: 'git daily use',
       command: 'git log --graph --oneline --all',
-      description: 'Displays a visual ASCII graph of the branch structure and commit history across all branches.'
+      description: 'git log --graph --oneline --all displays a visual ASCII graph of the branch structure and commit history across all branches.'
   }
 ]
