@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 7.04 - data js
+/**git-and-github-workflow  - version 7.05 - data js
  * - Features: 
  *    
- *     --> Adding 'git merge' to description 
+ *     --> Adding 'git log --graph --oneline --all' 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -136,5 +136,11 @@ export const gitCommands = [
       category: 'git daily use',
       command: 'git log',
       description: 'git log shows the commit history for the current repository.'
+  },
+  {
+      id: 20,
+      category: 'git daily use',
+      command: 'git log --graph --oneline --all',
+      description: 'Displays a visual ASCII graph of the branch structure and commit history across all branches.'
   }
 ]
