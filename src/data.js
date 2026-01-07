@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 7.03 - data js
+/**git-and-github-workflow  - version 7.04 - data js
  * - Features: 
  *    
- *     --> Adding 'git checkout' to description 
+ *     --> Adding 'git merge' to description 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -123,7 +123,7 @@ export const gitCommands = [
       id:17,
       category:'git often use',
       command:'git merge',
-      description:'Merges the specified branch into the current branch ( in this case main )'
+      description:'git merge does merges the specified branch into the current branch ( in this case main )'
   },
   {
       id: 18,
