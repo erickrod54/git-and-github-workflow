@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 7.12 - data js
+/**git-and-github-workflow  - version 7.13 - data js
  * - Features: 
  *    
- *     --> Adding 'git diff' to description
+ *     --> Adding 'git power'
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -160,5 +160,11 @@ export const gitCommands = [
       category: 'git often use',
       command: 'git diff',
       description: 'git diff shows the differences between your current working directory and the staging area (unstaged changes).'
-  }
+  },
+  {
+      id: 24,
+      category: 'git power use',
+      command: 'git checkout -b <branch-name>',
+      description: 'A shortcut that creates a new branch and immediately switches you to it.'
+    }
 ]
