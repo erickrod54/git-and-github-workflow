@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 7.11 - data js
+/**git-and-github-workflow  - version 7.12 - data js
  * - Features: 
  *    
- *     --> Adding 'git diff'
+ *     --> Adding 'git diff' to description
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -159,6 +159,6 @@ export const gitCommands = [
       id: 23,
       category: 'git often use',
       command: 'git diff',
-      description: 'Shows the differences between your current working directory and the staging area (unstaged changes).'
+      description: 'git diff shows the differences between your current working directory and the staging area (unstaged changes).'
   }
 ]
