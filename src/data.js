@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 7.09 - data js
+/**git-and-github-workflow  - version 7.10 - data js
  * - Features: 
  *    
- *     --> Adding 'git stash'
+ *     --> Adding 'git stash' to description
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -153,6 +153,6 @@ export const gitCommands = [
       id: 22,
       category: 'git often use',
       command: 'git stash pop',
-      description: 'Removes the most recent stash from your stash list and applies it to your current working directory.'
+      description: 'git stash removes the most recent stash from your stash list and applies it to your current working directory.'
     }
 ]
