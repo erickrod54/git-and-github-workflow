@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 7.10 - data js
+/**git-and-github-workflow  - version 7.11 - data js
  * - Features: 
  *    
- *     --> Adding 'git stash' to description
+ *     --> Adding 'git diff'
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -154,5 +154,11 @@ export const gitCommands = [
       category: 'git often use',
       command: 'git stash pop',
       description: 'git stash removes the most recent stash from your stash list and applies it to your current working directory.'
-    }
+  },
+  {
+      id: 23,
+      category: 'git often use',
+      command: 'git diff',
+      description: 'Shows the differences between your current working directory and the staging area (unstaged changes).'
+  }
 ]
