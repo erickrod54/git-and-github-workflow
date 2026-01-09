@@ -1,9 +1,9 @@
 import styled, { createGlobalStyle } from "styled-components"
 
-/**git-and-github-workflow  - version 6.03 - styledcomponent
+/**git-and-github-workflow  - version 7.19 - styledcomponent
  * - Features: 
  * 
- *     --> Building 'FrequencyBadge'    
+ *     --> Building 'NewDescriptionBox'    
  * 
  * Note: this is the index components
 */
@@ -178,9 +178,19 @@ export const FooterContainer = styled.footer`
     }
 `;  
 
-export const DescriptionBox = styled.p`
+export const NewDescriptionBox = styled.div`
+  font-family: 'Inter', sans-serif; /* Use a clean, consistent font */
+  font-size: 1.1rem;                /* Standardize the size */
+  line-height: 1.6;                 /* Add breathing room between lines */
+  color: #4a5568;                   /* A soft dark gray for readability */
+  margin-bottom: 15px;
 
-`
+  /* This ensures that any nested spans from HighlightedText match exactly */
+  span {
+    font-size: inherit;
+    line-height: inherit;
+  }
+`;
 
 export const StrongContainer = styled.strong`
 
