@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 7.15 - data js
+/**git-and-github-workflow  - version 7.16 - data js
  * - Features: 
  *    
- *     --> Adding 'git checkout -b <branch-name>' to description
+ *     --> Adding 'git cherry-pick <commit-hash>' to description
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -166,5 +166,11 @@ export const gitCommands = [
       category: 'git power use',
       command: 'git checkout -b <branch-name>',
       description: 'git checkout -b <branch-name> is shortcut that creates a new branch and immediately switches you to it.'
+  },
+  {
+      id: 25,
+      category: 'git power use',
+      command: 'git cherry-pick <commit-hash>',
+      description: 'Applies the changes from a specific commit from another branch onto your current branch.'
     }
 ]
