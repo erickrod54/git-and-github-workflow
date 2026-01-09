@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 7.14 - data js
+/**git-and-github-workflow  - version 7.15 - data js
  * - Features: 
  *    
- *     --> Adding 'git power' to description
+ *     --> Adding 'git checkout -b <branch-name>' to description
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -165,6 +165,6 @@ export const gitCommands = [
       id: 24,
       category: 'git power use',
       command: 'git checkout -b <branch-name>',
-      description: 'git power is shortcut that creates a new branch and immediately switches you to it.'
+      description: 'git checkout -b <branch-name> is shortcut that creates a new branch and immediately switches you to it.'
     }
 ]
