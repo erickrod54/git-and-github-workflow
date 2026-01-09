@@ -1,7 +1,7 @@
 import { BoxContainer,
          CardContainer,
          CommandsPalleteContainer,
-         DescriptionBox,
+         NewDescriptionBox,
          FooterColumn,
          FooterContainer,
          HomePageContainer,
@@ -14,10 +14,10 @@ import { BoxContainer,
          FrequencyBadge,
          MainContent, MainTitle, SingleCommandContainer, StrongContainer, SubTitle } from "./styled.components";
 
-/**git-and-github-workflow  - version 6.03 - styled.components > index
+/**git-and-github-workflow  - version 7.19 - styled.components > index
  * - Features: 
  * 
- *     --> Importing and exporting 'FrequencyBadge'  
+ *     --> Importing and exporting 'NewDescriptionBox'  
  * 
  * Note: this is the index components
  */
@@ -36,4 +36,4 @@ export { HomePageContainer,
          FooterColumn,
          FooterContainer,
          IconContainer,
-         CardContainer, BoxContainer, StrongContainer, DescriptionBox }
+         CardContainer, BoxContainer, StrongContainer, NewDescriptionBox }
