@@ -1,18 +1,35 @@
 import React from "react";
 import SingleCommand from "./single.command.component";
 import { useGitGuideContext } from "../context";
-import { BoxContainer, BoxContent, CardContainer, DescriptionBox, StrongContainer, Title, FrequencyLabel, FrequencyBadge } from "../styled-components/styled.components";
+import { BoxContainer, BoxContent, CardContainer, StrongContainer, Title, FrequencyLabel, FrequencyBadge } from "../styled-components/styled.components";
 import { toast } from "sonner";
 import { getFrequencyLabel } from "../utils/utils";
 import { HighlightedText } from "./index.components";
+import styled from "styled-components";
 
-/**git-and-github-workflow  - version 6.05 - SingleCardCommand
+
+/**git-and-github-workflow  - version 7.17 - SingleCardCommand
  * - Features: 
  * 
- *     --> Adding 'HighlightedText'
+ *     --> Adding 'DescriptionBox' new version
  *   
- * Note: commands have to be added to the description 
- */
+ * Note: Wrappping 'HighlightedText' component using
+ * 'DescriptionBox' new version   
+*/
+
+const DescriptionBox = styled.div`
+  font-family: 'Inter', sans-serif; /* Use a clean, consistent font */
+  font-size: 1.1rem;                /* Standardize the size */
+  line-height: 1.6;                 /* Add breathing room between lines */
+  color: #4a5568;                   /* A soft dark gray for readability */
+  margin-bottom: 15px;
+
+  /* This ensures that any nested spans from HighlightedText match exactly */
+  span {
+    font-size: inherit;
+    line-height: inherit;
+  }
+`;
 
 
 const SingleCardComponent = ({ searchTerm = "" }) => {
@@ -50,8 +67,9 @@ const SingleCardComponent = ({ searchTerm = "" }) => {
                         <BoxContent>
                         <SingleCommand command={command}/>    
                         <StrongContainer>Description</StrongContainer>
-                                <HighlightedText text={description} highlight={searchTerm} />
-                            <DescriptionBox>{description}</DescriptionBox>
+                            <DescriptionBox>
+                                <HighlightedText text={description} highlight={searchTerm} />    
+                            </DescriptionBox>
                                 <FrequencyBadge level={label}>
                                     <FrequencyLabel>{label}</FrequencyLabel>
                                 </FrequencyBadge>
