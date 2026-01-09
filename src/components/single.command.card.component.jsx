@@ -8,16 +8,16 @@ import { HighlightedText } from "./index.components";
 import styled from "styled-components";
 
 
-/**git-and-github-workflow  - version 7.17 - SingleCardCommand
+/**git-and-github-workflow  - version 7.18 - SingleCardCommand
  * - Features: 
  * 
- *     --> Adding 'DescriptionBox' new version
+ *     --> Renaming to 'NewDescriptionBox' 
  *   
  * Note: Wrappping 'HighlightedText' component using
  * 'DescriptionBox' new version   
 */
 
-const DescriptionBox = styled.div`
+const NewDescriptionBox = styled.div`
   font-family: 'Inter', sans-serif; /* Use a clean, consistent font */
   font-size: 1.1rem;                /* Standardize the size */
   line-height: 1.6;                 /* Add breathing room between lines */
@@ -67,9 +67,9 @@ const SingleCardComponent = ({ searchTerm = "" }) => {
                         <BoxContent>
                         <SingleCommand command={command}/>    
                         <StrongContainer>Description</StrongContainer>
-                            <DescriptionBox>
+                            <NewDescriptionBox>
                                 <HighlightedText text={description} highlight={searchTerm} />    
-                            </DescriptionBox>
+                            </NewDescriptionBox>
                                 <FrequencyBadge level={label}>
                                     <FrequencyLabel>{label}</FrequencyLabel>
                                 </FrequencyBadge>
