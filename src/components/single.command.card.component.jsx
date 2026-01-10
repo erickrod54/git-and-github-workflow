@@ -5,13 +5,12 @@ import { BoxContainer, BoxContent, CardContainer, StrongContainer, Title, Freque
 import { toast } from "sonner";
 import { getFrequencyLabel } from "../utils/utils";
 import { HighlightedText } from "./index.components";
-import styled from "styled-components";
 
 
-/**git-and-github-workflow  - version 7.18 - SingleCardCommand
+/**git-and-github-workflow  - version 7.20 - SingleCardCommand
  * - Features: 
  * 
- *     --> Migrating 'NewDescriptionBox' 
+ *     --> Clearing 'styled' 
  *   
  * Note: Wrappping 'HighlightedText' component using
  * 'DescriptionBox' new version   
