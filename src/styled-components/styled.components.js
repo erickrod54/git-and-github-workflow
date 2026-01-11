@@ -1,9 +1,9 @@
 import styled, { createGlobalStyle } from "styled-components"
 
-/**git-and-github-workflow  - version 7.19 - styledcomponent
+/**git-and-github-workflow  - version 8.03 - styledcomponent
  * - Features: 
  * 
- *     --> Building 'NewDescriptionBox'    
+ *     --> Building 'CopyButton'    
  * 
  * Note: this is the index components
 */
@@ -12,6 +12,40 @@ import styled, { createGlobalStyle } from "styled-components"
 export const FrequencyLabel = styled.span`
   opacity: 0.7;
   font-weight: 400;
+`;
+
+export const CopyButton = styled.button`
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+
+  &:hover {
+    background: #f7fafc;
+    border-color: #cbd5e0;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  &:active {
+    transform: translateY(0);
+    background: #edf2f7;
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+    color: #718096;
+  }
 `;
 
 // This replaces 'FrecuencyTitle' and Value for a cleaner "Badge" look
