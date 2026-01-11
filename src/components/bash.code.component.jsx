@@ -1,16 +1,15 @@
 import React, { useEffect } from 'react';
 import Prism from 'prismjs';
 import 'prismjs/components/prism-cshtml';
-import { clipboard } from '../assets/index.assets';
 import styled from 'styled-components';
-import { handleCopyCommand } from '../utils/utils';
 
-/**Portfolio-erick - version 8.01 - BashCode -
+/**Portfolio-erick - version 8.02 - BashCode -
 * Features:
 
-    --> Separating 'handleCopyCommand' logic into utils
+    --> Keeping just one copy command button
 
-* Notes: Migrating styled components
+* Notes: Migrating styled components, has been lifted\
+* to single command
 **/
 
 const Okadia = styled.div`
@@ -29,13 +28,6 @@ const BashCode = ({ code }) => {
         <Okadia>
             <div className='sm:w-66 relative'>
                 {/* Clean onClick call */}
-                <button 
-                    onClick={() => handleCopyCommand(code)} 
-                    className='absolute top-2 right-2 p-2 rounded-md bg-gray-800 hover:bg-green-300 duration-200'
-                >
-                    <img src={clipboard} alt='clipboard' className='w-6 h-6' />
-                </button>
-
                 <pre className="p-4 rounded-lg bg-gray-900">
                     <code className="lang-js">
                         {code}
