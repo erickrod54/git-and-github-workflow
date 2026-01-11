@@ -1,54 +1,25 @@
 import React from "react";
 import SingleCommand from "./single.command.component";
 import { useGitGuideContext } from "../context";
-import { BoxContainer, BoxContent, CardContainer, StrongContainer, Title, FrequencyLabel, NewDescriptionBox, FrequencyBadge } from "../styled-components/styled.components";
+import { BoxContainer, BoxContent,
+         CardContainer,
+         StrongContainer,
+         Title,
+         CopyButton,
+         FrequencyLabel, NewDescriptionBox, FrequencyBadge } from "../styled-components/styled.components";
 import { toast } from "sonner";
 import { getFrequencyLabel, handleCopyCommand } from "../utils/utils";
 import { HighlightedText } from "./index.components";
 import styled from "styled-components";
 
-/**git-and-github-workflow  - version 8.02 - SingleCardCommand
+/**git-and-github-workflow  - version 8.03 - SingleCardCommand
  * - Features: 
  * 
- *     --> Implementing 'handleCopyCommand' ( copy button )
+ *     --> Migrating 'CopyButton' styles
  *   
  * Note: Wrappping 'HighlightedText' component using
  * 'DescriptionBox' new version   
 */
-
-export const CopyButton = styled.button`
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 8px;
-  padding: 8px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s ease;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-
-  &:hover {
-    background: #f7fafc;
-    border-color: #cbd5e0;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  }
-
-  &:active {
-    transform: translateY(0);
-    background: #edf2f7;
-  }
-
-  svg {
-    width: 20px;
-    height: 20px;
-    color: #718096;
-  }
-`;
 
 
 const SingleCardComponent = ({ searchTerm = "" }) => {
