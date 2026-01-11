@@ -12,17 +12,19 @@ import { BoxContainer,
          SearchIcon,
          FrequencyLabel,
          FrequencyBadge,
+         CopyButton,
          MainContent, MainTitle, SingleCommandContainer, StrongContainer, SubTitle } from "./styled.components";
 
-/**git-and-github-workflow  - version 7.19 - styled.components > index
+/**git-and-github-workflow  - version 8.03 - styled.components > index
  * - Features: 
  * 
- *     --> Importing and exporting 'NewDescriptionBox'  
+ *     --> Importing and exporting 'CopyButton'  
  * 
  * Note: this is the index components
  */
 
 export { HomePageContainer,
+         CopyButton,
          FrequencyBadge,
          FrequencyLabel,
          SearchIcon,
