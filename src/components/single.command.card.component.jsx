@@ -10,12 +10,11 @@ import { BoxContainer, BoxContent,
 import { toast } from "sonner";
 import { getFrequencyLabel, handleCopyCommand } from "../utils/utils";
 import { HighlightedText } from "./index.components";
-import styled from "styled-components";
 
-/**git-and-github-workflow  - version 8.03 - SingleCardCommand
+/**git-and-github-workflow  - version 8.04 - SingleCardCommand
  * - Features: 
  * 
- *     --> Migrating 'CopyButton' styles
+ *     --> Removing 'styled'
  *   
  * Note: Wrappping 'HighlightedText' component using
  * 'DescriptionBox' new version   
