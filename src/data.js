@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 8.06 - data js
+/**git-and-github-workflow  - version 8.07 - data js
  * - Features: 
  *    
- *     --> Adding 'ssh-keygen' to description first
+ *     --> Adding 'ssh -T git@github.com' 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -173,10 +173,16 @@ export const gitCommands = [
       command: 'git cherry-pick <commit-hash>',
       description: 'Applies the changes from a specific commit from another branch onto your current branch.'
   },
-    {
+  {
     id: 26,
     category: 'git authentication',
     command: 'ssh-keygen -t ed25519 -C "your_email@example.com"',
     description: 'ssh-keygen Generates a new SSH key using the Ed25519 algorithm. This is the first step in setting up secure, password-less communication with GitHub.'
+  },
+  {
+    id: 27,
+    category: 'git authentication',
+    command: 'ssh -T git@github.com',
+    description: 'Tests your SSH connection to GitHub. If successful, you will see a "Hi username! You\'ve successfully authenticated" message, confirming your key is working.'
   }
 ]
