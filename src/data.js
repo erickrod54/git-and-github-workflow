@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 7.16 - data js
+/**git-and-github-workflow  - version 8.05 - data js
  * - Features: 
  *    
- *     --> Adding 'git cherry-pick <commit-hash>' to description
+ *     --> Adding 'ssh-keygen' to description
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -172,5 +172,11 @@ export const gitCommands = [
       category: 'git power use',
       command: 'git cherry-pick <commit-hash>',
       description: 'Applies the changes from a specific commit from another branch onto your current branch.'
-    }
+  },
+    {
+    id: 26,
+    category: 'git authentication',
+    command: 'ssh-keygen -t ed25519 -C "your_email@example.com"',
+    description: 'Generates a new SSH key using the Ed25519 algorithm. This is the first step in setting up secure, password-less communication with GitHub.'
+  }
 ]
