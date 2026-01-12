@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 8.08 - data js
+/**git-and-github-workflow  - version 8.09 - data js
  * - Features: 
  *    
- *     --> Adding 'ssh -T git@github.com' to description 
+ *     --> Adding 'git config --global user.name "Your Name"' 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -184,5 +184,11 @@ export const gitCommands = [
     category: 'git authentication',
     command: 'ssh -T git@github.com',
     description: 'ssh -T git@github.com tests your SSH connection to GitHub. If successful, you will see a "Hi username! You\'ve successfully authenticated" message, confirming your key is working.'
+  },
+  {
+    id: 28,
+    category: 'git authentication',
+    command: 'git config --global user.name "Your Name"',
+    description: 'Sets the name that will be attached to your commits globally. This ensures GitHub identifies you correctly in the commit history.'
   }
 ]
