@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 8.07 - data js
+/**git-and-github-workflow  - version 8.08 - data js
  * - Features: 
  *    
- *     --> Adding 'ssh -T git@github.com' 
+ *     --> Adding 'ssh -T git@github.com' to description 
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -183,6 +183,6 @@ export const gitCommands = [
     id: 27,
     category: 'git authentication',
     command: 'ssh -T git@github.com',
-    description: 'Tests your SSH connection to GitHub. If successful, you will see a "Hi username! You\'ve successfully authenticated" message, confirming your key is working.'
+    description: 'ssh -T git@github.com tests your SSH connection to GitHub. If successful, you will see a "Hi username! You\'ve successfully authenticated" message, confirming your key is working.'
   }
 ]
