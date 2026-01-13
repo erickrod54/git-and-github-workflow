@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 8.13 - data js
+/**git-and-github-workflow  - version 8.14 - data js
  * - Features: 
  *    
- *     --> Adding git remote set-url origin git@github.com:user/repo.git
+ *     --> Adding git remote set-url origin git@github.com:user/repo.git to description
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -201,6 +201,6 @@ export const gitCommands = [
     id: 30,
     category: 'git authentication',
     command: 'git remote set-url origin git@github.com:user/repo.git',
-    description: 'Switches an existing repository from HTTPS to SSH. Use this if you are tired of being asked for a Personal Access Token (PAT) on every push.'
+    description: 'git remote set-url origin git@github.com:user/repo.git switches an existing repository from HTTPS to SSH. Use this if you are tired of being asked for a Personal Access Token (PAT) on every push.'
   }
 ]
