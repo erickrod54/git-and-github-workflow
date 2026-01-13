@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 8.14 - data js
+/**git-and-github-workflow  - version 8.15 - data js
  * - Features: 
  *    
- *     --> Adding git remote set-url origin git@github.com:user/repo.git to description
+ *     --> Adding git config --global credential.helper store
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -202,5 +202,11 @@ export const gitCommands = [
     category: 'git authentication',
     command: 'git remote set-url origin git@github.com:user/repo.git',
     description: 'git remote set-url origin git@github.com:user/repo.git switches an existing repository from HTTPS to SSH. Use this if you are tired of being asked for a Personal Access Token (PAT) on every push.'
+  },
+  {
+    id: 31,
+    category: 'git authentication',
+    command: 'git config --global credential.helper store',
+    description: 'Saves your Personal Access Token (PAT) in a local file so you don\'t have to re-enter it. Use only on private, secure computers.'
   }
 ]
