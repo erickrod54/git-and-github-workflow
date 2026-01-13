@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 8.12 - data js
+/**git-and-github-workflow  - version 8.13 - data js
  * - Features: 
  *    
- *     --> Adding git config --global user.email email@example.com to description
+ *     --> Adding git remote set-url origin git@github.com:user/repo.git
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -196,5 +196,11 @@ export const gitCommands = [
     category: 'git authentication',
     command: 'git config --global user.email "email@example.com"',
     description: 'git config --global user.email "email@example.com" sets the email address for your commits. Important: This must match your GitHub account email for your contributions to be linked to your profile.'
+  },
+  {
+    id: 30,
+    category: 'git authentication',
+    command: 'git remote set-url origin git@github.com:user/repo.git',
+    description: 'Switches an existing repository from HTTPS to SSH. Use this if you are tired of being asked for a Personal Access Token (PAT) on every push.'
   }
 ]
