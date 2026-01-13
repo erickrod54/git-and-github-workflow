@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 8.11 - data js
+/**git-and-github-workflow  - version 8.12 - data js
  * - Features: 
  *    
- *     --> Adding git config --global user.email email@example.com
+ *     --> Adding git config --global user.email email@example.com to description
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -195,6 +195,6 @@ export const gitCommands = [
     id: 29,
     category: 'git authentication',
     command: 'git config --global user.email "email@example.com"',
-    description: 'Sets the email address for your commits. Important: This must match your GitHub account email for your contributions to be linked to your profile.'
+    description: 'git config --global user.email "email@example.com" sets the email address for your commits. Important: This must match your GitHub account email for your contributions to be linked to your profile.'
   }
 ]
