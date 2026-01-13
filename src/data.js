@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 8.15 - data js
+/**git-and-github-workflow  - version 8.16 - data js
  * - Features: 
  *    
- *     --> Adding git config --global credential.helper store
+ *     --> Adding git config --global credential.helper store to description
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -207,6 +207,6 @@ export const gitCommands = [
     id: 31,
     category: 'git authentication',
     command: 'git config --global credential.helper store',
-    description: 'Saves your Personal Access Token (PAT) in a local file so you don\'t have to re-enter it. Use only on private, secure computers.'
+    description: 'git config --global credential.helper store saves your Personal Access Token (PAT) in a local file so you don\'t have to re-enter it. Use only on private, secure computers.'
   }
 ]
