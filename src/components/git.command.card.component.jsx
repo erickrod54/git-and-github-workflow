@@ -1,15 +1,22 @@
 import styled from "styled-components";
 
-/**Portfolio-erick - version 9.00 - GitCommandCard -
+/**Portfolio-erick - version 9.01 - GitCommandCard -
 * Features:
 
-    --> Implementing CommandCard styles
+    --> Completing CommandCard styles
 
 * Notes: Migrating styled components
 **/
 
 const CommandCard = styled.div`
     background-color: #fdf6e3;
+
+    border-radius:12px;
+    padding:24px;
+    margin-bottom:20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    position:relative;
+    border: 1px solid #eee;ss
 `
 
 
