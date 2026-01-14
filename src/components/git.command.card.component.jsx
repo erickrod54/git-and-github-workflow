@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-/**Portfolio-erick - version 8.20 - GitCommandCard -
+/**Portfolio-erick - version 9.00 - GitCommandCard -
 * Features:
 
-    --> Building CommandCard styles
+    --> Implementing CommandCard styles
 
 * Notes: Migrating styled components
 **/
@@ -16,7 +16,7 @@ const CommandCard = styled.div`
 const GitCommandCard = ({ item }) => {
 
     return (
-        <section>
+        <CommandCard>
             <h2>{item.category}</h2>
 
             <div>
@@ -27,7 +27,7 @@ const GitCommandCard = ({ item }) => {
                 <h4> Description & Usage</h4>
                 <p>{item.description}</p>
             </div>
-        </section>
+        </CommandCard>
     )
 }
 
