@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 8.16 - data js
+/**git-and-github-workflow  - version 8.17 - data js
  * - Features: 
  *    
- *     --> Adding git config --global credential.helper store to description
+ *     --> Adding ssh-add ~/.ssh/id_ed25519
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -208,5 +208,11 @@ export const gitCommands = [
     category: 'git authentication',
     command: 'git config --global credential.helper store',
     description: 'git config --global credential.helper store saves your Personal Access Token (PAT) in a local file so you don\'t have to re-enter it. Use only on private, secure computers.'
+  },
+  {
+    id: 32,
+    category: 'git authentication',
+    command: 'ssh-add ~/.ssh/id_ed25519',
+    description: 'Adds your private SSH key to the ssh-agent. This manages your keys and allows you to use them without re-entering your passphrase constantly.'
   }
 ]
