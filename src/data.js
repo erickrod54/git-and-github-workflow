@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 8.17 - data js
+/**git-and-github-workflow  - version 8.18 - data js
  * - Features: 
  *    
- *     --> Adding ssh-add ~/.ssh/id_ed25519
+ *     --> Adding ssh-add ~/.ssh/id_ed25519 to description
  * 
  * Note: This component will have later the main menu
  * to each pattern and its explanations and use cases
@@ -213,6 +213,6 @@ export const gitCommands = [
     id: 32,
     category: 'git authentication',
     command: 'ssh-add ~/.ssh/id_ed25519',
-    description: 'Adds your private SSH key to the ssh-agent. This manages your keys and allows you to use them without re-entering your passphrase constantly.'
+    description: 'ssh-add ~/.ssh/id_ed25519 adds your private SSH key to the ssh-agent. This manages your keys and allows you to use them without re-entering your passphrase constantly.'
   }
 ]
