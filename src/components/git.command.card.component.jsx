@@ -1,10 +1,16 @@
- /**Portfolio-erick - version 8.19 - GitCommandCard -
+import styled from "styled-components";
+
+/**Portfolio-erick - version 8.20 - GitCommandCard -
 * Features:
 
-    --> Building GitCommandCardSS
+    --> Building CommandCard styles
 
 * Notes: Migrating styled components
 **/
+
+const CommandCard = styled.div`
+    background-color: #fdf6e3;
+`
 
 
 const GitCommandCard = ({ item }) => {
