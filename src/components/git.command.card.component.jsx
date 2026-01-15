@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-/**Portfolio-erick - version 9.04 - GitCommandCard -
+/**Portfolio-erick - version 9.05 - GitCommandCard -
 * Features:
 
-    --> Building MainCommandBox styles
+    --> Implementing MainCommandBox styles
 
 * Notes: Migrating styled components
 **/
@@ -57,9 +57,9 @@ const GitCommandCard = ({ item }) => {
         <CommandCard>
             <CategoryHeader>{item.category}</CategoryHeader>
 
-            <div>
+            <MainCommandBox>
                 {item.command}
-            </div>
+            </MainCommandBox>
 
             <div>
                 <h4> Description & Usage</h4>
