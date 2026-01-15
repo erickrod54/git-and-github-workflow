@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-/**Portfolio-erick - version 9.06 - GitCommandCard -
+/**Portfolio-erick - version 9.07 - GitCommandCard -
 * Features:
 
-    --> Building DescriptionBox styles
+    --> Implementing DescriptionBox styles
 
 * Notes: Migrating styled components
 **/
@@ -80,10 +80,10 @@ const GitCommandCard = ({ item }) => {
                 {item.command}
             </MainCommandBox>
 
-            <div>
+            <DescriptionBox>
                 <h4> Description & Usage</h4>
                 <p>{item.description}</p>
-            </div>
+            </DescriptionBox>
         </CommandCard>
     )
 }
