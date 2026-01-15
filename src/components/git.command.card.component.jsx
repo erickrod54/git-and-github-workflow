@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-/**Portfolio-erick - version 9.05 - GitCommandCard -
+/**Portfolio-erick - version 9.06 - GitCommandCard -
 * Features:
 
-    --> Implementing MainCommandBox styles
+    --> Building DescriptionBox styles
 
 * Notes: Migrating styled components
 **/
@@ -50,6 +50,25 @@ const MainCommandBox = styled.div`
     letter-spacing:1px;
 `
 
+//The Description/usage Box
+const DescriptionBox = styled.div`
+    margin-top: 15px;
+
+    h4{
+        margin: 0 0 8px 0;
+        color:#333;
+        font-size:0.9rem;
+        text-transform:uppercase;
+        opaciy:0.7;
+    }
+
+    p{
+        color:#666;
+        font-size:0.85rem;
+        line-height:1.5;
+        margin:0;
+    }
+`
 
 const GitCommandCard = ({ item }) => {
 
