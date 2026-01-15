@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-/**Portfolio-erick - version 9.02 - GitCommandCard -
+/**Portfolio-erick - version 9.03 - GitCommandCard -
 * Features:
 
-    --> Building CategoryHeader styles
+    --> Implementing CategoryHeader styles
 
 * Notes: Migrating styled components
 **/
@@ -19,7 +19,7 @@ const CommandCard = styled.div`
     border: 1px solid #eee;ss
 `;
 
-const CateforyHeader = styled.div`
+const CategoryHeader = styled.div`
     display: flex;
     align-items: center;
     font-family:'Courier New', Courier, monospace;
@@ -41,7 +41,7 @@ const GitCommandCard = ({ item }) => {
 
     return (
         <CommandCard>
-            <h2>{item.category}</h2>
+            <CategoryHeader>{item.category}</CategoryHeader>
 
             <div>
                 {item.command}
