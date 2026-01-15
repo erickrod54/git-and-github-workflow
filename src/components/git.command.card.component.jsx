@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-/**Portfolio-erick - version 9.03 - GitCommandCard -
+/**Portfolio-erick - version 9.04 - GitCommandCard -
 * Features:
 
-    --> Implementing CategoryHeader styles
+    --> Building MainCommandBox styles
 
 * Notes: Migrating styled components
 **/
@@ -19,6 +19,7 @@ const CommandCard = styled.div`
     border: 1px solid #eee;ss
 `;
 
+//The Category Label (Top Left)
 const CategoryHeader = styled.div`
     display: flex;
     align-items: center;
@@ -35,6 +36,19 @@ const CategoryHeader = styled.div`
         border-radius:2px;
     }
 `;
+
+//The Primary Command Box ( Dark/Terminal style)
+const MainCommandBox = styled.div`
+    background-color:#lelele;
+    color:#d1d1d1;
+    padding:30px;
+    border-radius:4px;
+    font-family:'Console', 'Monaco', monospace;
+    font-size: 2.5rem;
+    text-align:center;
+    margin-bottom:20px;
+    letter-spacing:1px;
+`
 
 
 const GitCommandCard = ({ item }) => {
