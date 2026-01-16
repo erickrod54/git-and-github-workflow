@@ -1,29 +1,47 @@
-import React from "react";
+  import React from "react";
 import SingleCardComponent from "./single.command.card.component";
 import { CommandsPalleteContainer, SubTitle } from "../styled-components/styled.components";
 import { useGitGuideContext } from "../context";
 
-/**git-and-github-workflow  - version 5.11 - CommandsPallete
+/**Portfolio-erick - version 9.10 - CommandsPallete
  * - Features: 
  * 
- *     --> Paasing down 'searchTerm'  
- * 
- * Note: this is the index components
+ * --> Dividing Re-authentication Flow with SubTitle
  */
 
-
 const CommandsPallete = ({ searchTerm }) => {
+    const { gitCommands, TitlesData } = useGitGuideContext();
 
-    const { TitlesData } = useGitGuideContext();
+    // 1. Separate the commands based on IDs 33-37
+    const standardCommands = gitCommands.filter(cmd => cmd.id < 33 || cmd.id > 37);
+    const authRecoveryCommands = gitCommands.filter(cmd => cmd.id >= 33 && cmd.id <= 37);
 
-    const subtitle1 = TitlesData[1].title;
+    const mainTitle = TitlesData[1].title; // "Commands Pallete"
 
-    return(
+    return (
         <CommandsPalleteContainer>
-            <SubTitle>{subtitle1}</SubTitle>
-            <SingleCardComponent searchTerm={searchTerm} />
+            {/* --- Section 1: Standard Commands --- */}
+            <SubTitle>{mainTitle}</SubTitle>
+            <SingleCardComponent 
+                searchTerm={searchTerm} 
+                commandsData={standardCommands} 
+            />
+
+            {/* --- Section 2: Re-authentication Flow --- */}
+            {/* Only show this title if there are recovery commands matching the search */}
+            {authRecoveryCommands.length > 0 && (
+                <>
+                    <SubTitle style={{ marginTop: '40px', color: '#f24e1e' }}>
+                        Re-authentication Recovery Flow
+                    </SubTitle>
+                    <SingleCardComponent 
+                        searchTerm={searchTerm} 
+                        commandsData={authRecoveryCommands} 
+                    />
+                </>
+            )}
         </CommandsPalleteContainer>
-    )
+    );
 }
 
 export default CommandsPallete;
