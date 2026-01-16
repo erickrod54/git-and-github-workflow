@@ -1,10 +1,10 @@
-/**git-and-github-workflow  - version 8.18 - data js
+/**git-and-github-workflow  - version 9.08 - data js
  * - Features: 
  *    
- *     --> Adding ssh-add ~/.ssh/id_ed25519 to description
+ *     --> Adding 'usage' key
  * 
- * Note: This component will have later the main menu
- * to each pattern and its explanations and use cases
+ * Note: This first adding is to test the new UI
+ * and then proceed to refactor
  */
 
 export const TitlesData = [
@@ -45,7 +45,8 @@ export const gitCommands = [
       id:4,
       category:'git daily use',
       command:'git commit -m "commit message"',
-      description:'git commit -m "commit message" Replace "commit message" with a brief description of the changes that you made'
+      description: 'git commit -m "commit message" Replace "commit message" with a brief description of the changes that you made',
+      usage:'$ git add .\n$ git commit -m "Add new login feature"'
     },
     {
       id:5,
