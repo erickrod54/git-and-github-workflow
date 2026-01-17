@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 9.08 - data js
+/**git-and-github-workflow  - version 9.10 - data js
  * - Features: 
  *    
- *     --> Adding 'usage' key
+ *     --> Adding first step to rathuentication data 
  * 
  * Note: This first adding is to test the new UI
  * and then proceed to refactor
@@ -215,5 +215,11 @@ export const gitCommands = [
     category: 'git authentication',
     command: 'ssh-add ~/.ssh/id_ed25519',
     description: 'ssh-add ~/.ssh/id_ed25519 adds your private SSH key to the ssh-agent. This manages your keys and allows you to use them without re-entering your passphrase constantly.'
-  }
+  },
+  {
+    id: 33,
+    category: 'git authentication',
+    command: 'eval "$(ssh-agent -s)"',
+    description: 'Starts the SSH agent in the background. This is the first step to ensure your system is ready to handle your security keys.'
+  },
 ]
