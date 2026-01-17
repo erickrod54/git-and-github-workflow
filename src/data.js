@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 9.10 - data js
+/**git-and-github-workflow  - version 9.11 - data js
  * - Features: 
  *    
- *     --> Adding first step to rathuentication data 
+ *     --> Adding second step to rathuentication data 
  * 
  * Note: This first adding is to test the new UI
  * and then proceed to refactor
@@ -222,4 +222,11 @@ export const gitCommands = [
     command: 'eval "$(ssh-agent -s)"',
     description: 'Starts the SSH agent in the background. This is the first step to ensure your system is ready to handle your security keys.'
   },
+  {
+    id: 34,
+    category: 'git authentication',
+    command: 'ssh-add ~/.ssh/id_ed25519',
+    description: 'Adds your specific SSH private key to the agent. This "unlocks" your identity for your current terminal session.'
+  },
+
 ]
