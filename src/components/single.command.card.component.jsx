@@ -11,24 +11,26 @@ import { toast } from "sonner";
 import { getFrequencyLabel, handleCopyCommand } from "../utils/utils";
 import { GitCommandCard, HighlightedText } from "./index.components";
 
-/**git-and-github-workflow  - version 9.08 - SingleCardCommand
- * - Features: 
+/**git-and-github-workflow  - version 9.10 SingleCardCommand
+ * - Features:
  * 
- *     --> Integrating 'GitCommandCard' in SingleCard Command
+ *     --> Drilling from parent specific commands 
+ *         ( Commands splitted one level up )
  *   
  * Note: 'SingleCardCommand' is a new mastercard   
 */
 
 
-const SingleCardComponent = ({ searchTerm = "" }) => {
+const SingleCardComponent = ({ searchTerm = "", commandsData = [] }) => {
     const { gitCommands } = useGitGuideContext();
 
-    const filterCommands = gitCommands.filter((cmd) => {
+ // Use the passed commandsData instead of the whole context list
+    const filterCommands = commandsData.filter((cmd) => {
         const search = (searchTerm || "").toLowerCase();
         return (
-            (cmd.command?.toLowerCase().includes(search)) ||
-            (cmd.category?.toLowerCase().includes(search)) ||
-            (cmd.description?.toLowerCase().includes(search))
+            (cmd.command && cmd.command.toLowerCase().includes(search)) ||
+            (cmd.category && cmd.category.toLowerCase().includes(search)) ||
+            (cmd.description && cmd.description.toLowerCase().includes(search))
         );
     });
 
