@@ -1,7 +1,7 @@
-/**git-and-github-workflow  - version 9.12 - data js
+/**git-and-github-workflow  - version 9.13 - data js
  * - Features: 
  *    
- *     --> Adding third step to rathuentication data 
+ *     --> Adding fourth step to rathuentication data 
  * 
  * Note: This first adding is to test the new UI
  * and then proceed to refactor
@@ -233,6 +233,12 @@ export const gitCommands = [
     category: 'git authentication',
     command: 'ssh-add -l',
     description: 'Fingerprint check. This command lists the keys the agent currently "knows." If you don\'t see your key here, the previous step failed.'
+  },
+    {
+    id: 36,
+    category: 'git authentication',
+    command: 'cat ~/.ssh/id_ed25519.pub',
+    description: 'Displays your public key. Useful if you need to copy-paste it back into GitHub Settings to ensure they match.'
   },
 
 ]
